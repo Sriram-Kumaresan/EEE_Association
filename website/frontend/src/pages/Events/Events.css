@@ -7,7 +7,7 @@ body, html {
 }
 
 #root {
-    height: 100%;
+    /* height: 100%; */
 }
 
 .full-page-bg {
@@ -27,7 +27,7 @@ body, html {
     font-size: 48px;
     padding-top: 10%;
     padding-left: 10%;
-    font-family: Azoniz;
+    font-family: Azonix;
     font-weight: 400;
 }
 
