@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "Lexend";
+  src: url("./asset/fonts/Lexend.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Azonix";
+  src: url("./asset/fonts/Azonix.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
