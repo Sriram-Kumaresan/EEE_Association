@@ -1,7 +1,7 @@
 .card-widget {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color:rgb(20, 14, 0);
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
