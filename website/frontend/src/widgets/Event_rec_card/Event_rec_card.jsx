@@ -6,7 +6,7 @@ const Event_card1 = ({ image, text, targetUrl }) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate(targetUrl);
+    navigate(targetUrl); // This will navigate to the correct URL when clicked
   };
 
   return (
@@ -16,5 +16,6 @@ const Event_card1 = ({ image, text, targetUrl }) => {
     </div>
   );
 };
+
 
 export default Event_card1;

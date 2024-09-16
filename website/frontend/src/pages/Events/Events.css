@@ -40,7 +40,7 @@ body, html {
 }
 
 /* Individual card adjustments */
-.card-widget, .event_card4 {
+.card-widget{
     flex: 1 1 calc(33.33% - 40px);
     max-width: calc(33.33% - 40px);
     overflow: hidden;
@@ -91,10 +91,10 @@ body, html {
         padding-right: 5%;
     }
 
-    /* Make cards display one by one */
+  
     .card-widget, .event_card4 {
-        flex: 1 1 100%; /* Full width */
-        max-width: 100%; /* Full width */
+        flex: 1 1 100%;
+        max-width: 100%; 
     }
 
     /* Prevent text wrapping on small screens */

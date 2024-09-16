@@ -1,0 +1,155 @@
+/* Global Card Styles */
+.sec_card-widget {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(20, 14, 0);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 589px;
+    height: 346px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.sec_card-widget:hover {
+    transform: scale(1.05);
+}
+
+.sec_card-image {
+    width: 254px;
+    height: 252px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.sec_card_texts {
+    text-align: center;
+    padding-left: 20px;
+}
+
+.sec_card-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFAD32;
+    font-family: Lexend;
+}
+
+.sec_cardsub-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFAD32;
+    font-family: Lexend;
+    margin-top: 5px; /* Space between main text and subtext */
+}
+
+@media(max-width:1024px){
+    .sec_card-text {
+        font-size: 17px;         /* Adjust font size */
+    }
+
+    .sec_cardsub-text {
+        font-size: 13px;
+    }
+
+}
+@media (max-width: 768px) {
+    .sec_card-widget {
+        display: flex;
+        flex-direction: column;  /* Stack image on top and text below */
+        align-items: center;     /* Center contents */
+        justify-content: center; 
+        width: 100%;             /* Full width for each card */
+        max-width: 100%;         /* Ensure each card takes the full width */
+        padding: 20px;           /* Adjust padding for better spacing */
+        height: auto;            /* Remove fixed height */
+    }
+
+    .sec_card-image {
+        width: 100%;             /* Make the image take full width */
+        height: auto;            /* Adjust the height based on the width */
+        object-fit: cover;
+        border-radius: 8px;      /* Maintain border radius */
+    }
+
+    .sec_card_texts {
+        text-align: center;
+        padding: 15px 0;         /* Space between image and text */
+    }
+
+    .sec_card-text {
+        font-size: 20px;         /* Adjust text size for mobile view */
+        font-weight: bold;
+        color: #FFAD32;
+    }
+
+    .sec_cardsub-text {
+        font-size: 16px;
+        font-weight: bold;
+        color: #FFAD32;
+        margin-top: 5px;
+    }
+}
+
+/* Additional tweaks for 425px and below */
+@media screen and (max-width: 425px) {
+    .sec_card-widget {
+        width: 100%;             /* Full width on smaller screens */
+        padding: 15px;
+    }
+
+    .sec_card-image {
+        width: 100%;             /* Full width image */
+        height: auto;            /* Adjust height */
+    }
+
+    .sec_card-text {
+        font-size: 12px;         /* Adjust font size */
+    }
+
+    .sec_cardsub-text {
+        font-size: 14px;
+    }
+}
+
+/* For screens up to 375px */
+@media screen and (max-width: 375px) {
+    .sec_card-widget {
+        width: 100%;             /* Full width for small screens */
+        padding: 12px;
+    }
+
+    .sec_card-image {
+        width: 100%;             /* Full width image */
+        height: 180px;           /* Adjust height */
+    }
+
+    .sec_card-text {
+        font-size: 18px;         /* Adjust font size for 375px */
+    }
+
+    .sec_cardsub-text {
+        font-size: 14px;
+    }
+}
+
+/* For screens up to 320px */
+@media screen and (max-width: 320px) {
+    .sec_card-widget {
+        width: 100%;             /* Full width for very small screens */
+        padding: 10px;
+    }
+
+    .sec_card-image {
+        height: 150px;           /* Smaller image for 320px */
+    }
+
+    .sec_card-text {
+        font-size: 16px;         /* Adjust font size for 320px */
+    }
+
+    .sec_cardsub-text {
+        font-size: 12px;
+    }
+}
