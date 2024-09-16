@@ -101,7 +101,7 @@ const Navbar = () => {
             <div className='navbar_menu_img_cont'>
               <img src={menu7} alt='Accomodation Icon' className='navbar_menu_img'/>
             </div>
-            <div className='navbar_menu_text'>ACCOMODATION</div>
+            <div className='navbar_menu_text'>ACCOMMODATION</div>
           </a>
 
           <a href='/team' className={`navbar_menu_holder ${windowpath==='/team'?'selected_menu':''}`}>

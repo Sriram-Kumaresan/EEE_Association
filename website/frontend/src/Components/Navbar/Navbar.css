@@ -189,12 +189,12 @@ background: radial-gradient(circle, rgba(255,231,197,0.5) 0%, rgba(120,120,120,0
         height: 150px;
     }
     .navbar_close_holder{
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
     }
     .navbar_open_holder{
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
     }
 }
 
