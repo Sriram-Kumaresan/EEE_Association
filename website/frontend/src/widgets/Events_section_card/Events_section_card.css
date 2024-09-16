@@ -33,14 +33,14 @@
     font-size: 24px;
     font-weight: bold;
     color: #FFAD32;
-    font-family: Lexend;
+    font-family: 'Lexend';
 }
 
 .sec_cardsub-text {
     font-size: 16px;
     font-weight: bold;
     color: #FFAD32;
-    font-family: Lexend;
+    font-family: 'Lexend';
     margin-top: 5px; /* Space between main text and subtext */
 }
 

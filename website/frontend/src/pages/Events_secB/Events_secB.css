@@ -1,15 +1,3 @@
-
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-}
-
-#root {
-    height: 100%;
-}
-
 .secB_full-page-bg {
     background-image: url('../../asset/secB_land.png');
     background-size: cover;
@@ -17,9 +5,9 @@ body, html {
     background-repeat: no-repeat;
     min-height: 100vh;
     width: 100%;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
 }
 
 .secB_event_heading {
@@ -27,7 +15,7 @@ body, html {
     font-size: 48px;
     padding-top: 10%;
     padding-left: 5%;
-    font-family: Azoniz;
+    font-family: 'Azonix';
     font-weight: 400;
 }
 .heading-gap {
@@ -90,8 +78,6 @@ body, html {
 
     .card-text {
         white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
 }
 
@@ -117,8 +103,6 @@ body, html {
 
     .card-text {
         white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
 }
 
@@ -144,8 +128,6 @@ body, html {
 
     .card-text {
         white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
 }
 
