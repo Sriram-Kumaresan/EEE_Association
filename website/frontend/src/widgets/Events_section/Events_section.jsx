@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Event_section.css'; // Assuming you create a separate CSS file
+// import './Event_section.css'; 
 
 const Event_sec_card= ({ image, text, targetUrl }) => {
   const navigate = useNavigate();

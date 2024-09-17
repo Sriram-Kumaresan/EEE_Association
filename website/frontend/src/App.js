@@ -7,6 +7,7 @@ import Events_secA from "./pages/Events_secA/Events_secA";
 
 import "./App.css";
 import"./index.css";
+import { Description, EventTwo_des } from "./pages";
 
 const App = () => {
   const location = useLocation();
@@ -17,8 +18,9 @@ const App = () => {
     <div>
       
       <Routes>
-        <Route path="/" element={<Events />} />
-        <Route path="/Events_secA" element={<Events_secA />} />
+        <Route path="/" element={<Description />} />
+        {/* <Route path="/" element={<EventTwo_des />} /> */}
+        {/* <Route path="/Events_secA" element={<Events_secA />} /> */}
 
        
       </Routes>
