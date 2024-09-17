@@ -50,9 +50,7 @@ body, html {
     overflow: hidden;
     margin: 20px; /* Add some margin if necessary */
 }
-@media(max-width:1024){
 
-}
 
 
 @media (max-width: 768px) {

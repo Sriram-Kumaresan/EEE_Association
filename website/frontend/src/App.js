@@ -7,6 +7,7 @@ import Events_secB from './pages/Events_secB/Events_secB';
 import Events_secC from './pages/Events_secC/Events_secC';
 import Events_secD from './pages/Events_secD/Events_secD'; 
 import Events_secE from './pages/Events_secE/Events_secE';
+import Contact from './pages/Contact/Contact';
 
 import './App.css';
 import './index.css';
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/Events_secC" element={<Events_secC />} />
         <Route path="/Events_secD" element={<Events_secD />} />
         <Route path="/Events_secE" element={<Events_secE />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
   );

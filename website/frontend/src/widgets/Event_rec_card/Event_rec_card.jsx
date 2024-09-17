@@ -11,7 +11,7 @@ const Event_card1 = ({ image, text, targetUrl }) => {
 
   return (
     <div className="card-widget" onClick={handleClick}>
-      <img src={image} alt="Card visual" className="card-image" />
+      <div><img src={image} alt="Card visual" className="card-image" /></div>
       <span className="card-text">{text}</span>
     </div>
   );
