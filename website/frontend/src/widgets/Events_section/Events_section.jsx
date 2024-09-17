@@ -18,3 +18,4 @@ const Event_sec_card= ({ image, text, targetUrl }) => {
 };
 
 export default Event_sec_card;
+

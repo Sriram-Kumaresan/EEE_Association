@@ -1,5 +1,5 @@
-.secA_full-page-bg {
-    background-image: url('../../asset/secA_land.png');
+.secD_full-page-bg {
+    background-image: url('../../asset/secD_land.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -10,7 +10,7 @@
     justify-content: center; */
 }
 
-.secA_event_heading {
+.secD_event_heading {
     color: rgb(222, 170, 1);
     font-size: 48px;
     padding-top: 10%;
@@ -23,7 +23,7 @@
     width: 20px; 
 }
 
-.secA_event_cards {
+.secD_event_cards {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
@@ -33,20 +33,22 @@
 
 
 .sec_card-widget {
-    flex: 1 1 calc(33.33% - 40px);
-   
+    flex: 1 1 calc(50% - 40px); 
+    max-width: calc(50% - 40px); 
     overflow: hidden;
+    margin: 20px; /* Add some margin if necessary */
 }
 
 
+
 @media (max-width: 768px) {
-    .secA_event_heading {
+    .secD_event_heading {
         font-size: 36px;
         padding-left: 10%;
         padding-top: 5%;
     }
 
-    .secA_event_cards {
+    .secD_event_cards {
         gap: 30px;
     }
 
@@ -58,13 +60,13 @@
 
 /* Mobile view (425px and below) */
 @media (max-width: 425px) {
-    .secA_event_heading {
+    .secD_event_heading {
         font-size: 28px;
         padding-left: 5%;
         padding-right: 5%;
     }
 
-    .secA_event_cards {
+    .secD_event_cards {
         gap: 20px;
         padding-left: 5%;
         padding-right: 5%;
@@ -73,7 +75,8 @@
 
     .sec_card-widget {
         flex: 1 1 100%;
-        max-width: 100%; /* Ensure full width */
+        max-width: 100%;
+        margin: 0px;
     }
 
     .card-text {
@@ -83,22 +86,23 @@
 
 /* Small Mobile view (375px and below) */
 @media (max-width: 375px) {
-    .secA_event_heading {
+    .secD_event_heading {
         font-size: 26px;
         padding-left: 20%;
         padding-right: 4%;
     }
 
-    .secA_event_cards {
+    .secD_event_cards {
         gap: 15px;
         padding-left: 4%;
-        padding-right: 4%;
+        padding-right: 7%;
         flex-direction: column;  /* Ensure column direction for cards */
     }
 
     .sec_card-widget {
         flex: 1 1 100%;
-        max-width: 100%; /* Full width for single row */
+        max-width: 100%;
+        margin: 0px;
     }
 
     .card-text {
@@ -108,13 +112,13 @@
 
 /* Extra Small Mobile view (320px and below) */
 @media (max-width: 320px) {
-    .secA_event_heading {
+    .secD_event_heading {
         font-size: 24px;
         padding-left: 15%;
         padding-right: 3%;
     }
 
-    .secA_event_cards {
+    .secD_event_cards {
         gap: 10px;
         padding-left: 3%;
         padding-right: 3%;
@@ -124,12 +128,15 @@
     .sec_card-widget {
         flex: 1 1 100%;
         max-width: 100%;
+        margin: 0;
     }
 
     .card-text {
         white-space: nowrap;
     }
 }
+
+
 
 
 

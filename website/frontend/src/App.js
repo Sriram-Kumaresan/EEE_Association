@@ -1,8 +1,8 @@
-import React,{useEffect} from "react";
-import { Routes, Route,useLocation } from "react-router-dom";
+import React, { useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 
-import Events from "./pages/Events/Events";
-import Events_secA from "./pages/Events_secA/Events_secA";
+import {Navbar, Footer} from './Components'
+import {Events,Events_secA,Events_secB,Events_secC,Events_secD,Events_secE,Home,Contact} from './pages'
 
 
 import "./App.css";
@@ -11,12 +11,13 @@ import { Description, EventTwo_des } from "./pages";
 
 const App = () => {
   const location = useLocation();
-  useEffect(()=>{
-    window.scrollTo(0,0)
-  },[location])
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
     <div>
-      
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Description />} />
         {/* <Route path="/" element={<EventTwo_des />} /> */}
@@ -24,7 +25,7 @@ const App = () => {
 
        
       </Routes>
-     
+     <Footer/>
     </div>
   );
 };
