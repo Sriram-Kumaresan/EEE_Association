@@ -19,9 +19,11 @@
 
 .card-image {
   opacity: 80%;
-  height: 80px; 
-  object-fit: cover;
+  height: auto; 
+  width: 90%;
+  /* object-fit: cover; */
   border-radius: 4px;
+  mix-blend-mode:difference;
 }
 
 .card-text {
@@ -31,6 +33,7 @@
   padding-left: 10px;
   color: #FFAD32;
   font-family: Lexend;
+  overflow: visible;
 }
 
 /* Mobile view (425px, 375px, 320px) */

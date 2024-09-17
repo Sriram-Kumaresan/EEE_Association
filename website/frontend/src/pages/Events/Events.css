@@ -1,15 +1,3 @@
-/* General Styles */
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-}
-
-#root {
-    /* height: 100%; */
-}
-
 .full-page-bg {
     background-image: url('../../asset/event_land.png');
     background-size: cover;
@@ -17,15 +5,13 @@ body, html {
     background-repeat: no-repeat;
     min-height: 100vh;
     width: 100%;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
 }
 
 .event_heading {
+    padding-top: 10%;
     color: rgb(222, 170, 1);
     font-size: 48px;
-    padding-top: 10%;
     padding-left: 10%;
     font-family: Azonix;
     font-weight: 400;
