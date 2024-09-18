@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 
 import {Navbar, Footer} from './Components'
-import {Events,Events_secA,Events_secB,Events_secC,Events_secD,Events_secE,Home,Contact} from './pages'
+import {Events,Events_secA,Events_secB,Events_secC,Events_secD,Events_secE,Home,Contact,Accomodation} from './pages'
 
 import './App.css';
 import './index.css';
@@ -25,6 +25,7 @@ const App = () => {
         <Route path="/Events_secD" element={<Events_secD />} />
         <Route path="/Events_secE" element={<Events_secE />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/accomodation" element={<Accomodation />} />
       </Routes>
      <Footer/>
     </div>
