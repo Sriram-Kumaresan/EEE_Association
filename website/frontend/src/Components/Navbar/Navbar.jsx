@@ -26,13 +26,6 @@ const Navbar = () => {
   },[])
 
   const navbarToggler=()=>{
-    console.log(navopen)
-    if(navopen){
-      console.log("closing")
-    }else{
-      console.log("opening")
-    }
-
     if(firstflag===0){
       setFirstflag(1)
     }
