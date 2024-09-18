@@ -6,4 +6,6 @@ export {default as Events_secC} from './Events_secC/Events_secC';
 export {default as Events_secD} from './Events_secD/Events_secD';
 export {default as Events_secE} from './Events_secE/Events_secE';
 export {default as Contact} from './Contact/Contact';
+export {default as Description} from './Description/Description';
+export {default as EventTwo_des} from './EventTwo_des/EventTwo_des';
 export {default as Accomodation} from './Accomodation/Accomodation';

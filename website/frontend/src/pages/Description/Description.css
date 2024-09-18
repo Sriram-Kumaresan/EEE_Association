@@ -1,0 +1,361 @@
+
+*{
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.page-background {
+    background-image: url('../../asset/event_land.png'); /* Full page background */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    padding: 20px; /* Add some padding to avoid overflow */
+    box-sizing: border-box;
+}
+
+
+.description-box {
+    width: 85%;
+    max-width: 1000px;
+    background: rgba(0, 0, 0, 0.7); /* Dark transparent background */
+    padding: 40px 40px 0px 40px; /* Remove bottom padding */
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 0; /* Remove margin at the bottom */
+}
+
+
+.event-title {
+    font-size: 24px;
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 10px;
+    /* text-align: center;
+    justify-content: center; */
+}
+
+
+.description-header {
+    font-size: 22px;
+    color: #ffcc00; 
+    text-align: left;
+    margin-bottom: 20px;
+      text-align: center;
+    justify-content: center;
+}
+
+/* Description Text */
+.description-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ddd; /* Light gray for readability */
+    text-align: justify;
+    margin-bottom: 40px;
+    flex-grow: 1;
+}
+
+.tab-menu-container {
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px; /* Adjust this value to perfectly align the tab menu */
+    z-index: 1;
+}
+
+
+.tab-menu {
+    display: flex;
+    justify-content: center; 
+    align-items:center; 
+    border-radius: 0 0 10px 10px; 
+    border-top: none;
+    /* transform-origin: bottom; */
+    padding: 0; 
+    /* border-image-slice: 1;  */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+    width: 70%;
+    max-width: 600px;
+    position: relative; 
+    /* overflow: hidden; */
+    /* margin-left: 155px; 
+    margin-top: 100px; */
+    margin: 0 auto; 
+    /* background: linear-gradient(106.64deg, rgba(255, 173, 50, 0.3) 0%, rgba(255, 173, 50, 0.3) 203.52%);  */
+}
+
+/* Tab Items */
+.tab-item {
+    position: relative;
+    background: linear-gradient(106.64deg, rgba(255, 173, 50, 0.3) 0%, rgba(255, 173, 50, 0.3) 203.52%); 
+    flex: 1; 
+    text-align: center; 
+    cursor: pointer;
+    background-color: transparent;
+    padding: 18px 14px ; /* Reduced padding for the tabs */
+    margin-bottom: 0;
+    /* border-radius: 20px; */
+    transition: height 0.4s ease, transform 0.4s ease, background-color 0.4s ease, border-color 0.4s ease; /* Smooth transition */
+    height: 50px; 
+    overflow: hidden;
+    z-index: 1; 
+}
+
+
+.tab-item.active  {
+    /* height: 50px;  */
+    /* transform: ScaleY(5px);  */
+    /* background: linear-gradient(106.64deg, rgba(255, 173, 50, 0.3) 0%, rgba(255, 173, 50, 0.3) 203.52%);  */
+    background-color:rgba(248, 208, 0, 0.36) !important;
+    border-color: transparent; 
+    transform-origin: bottom;
+    /* height: 50px;  */
+    padding-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+
+
+.tab-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #ffad32;
+    transition: height 0.4s ease, opacity 0.4s ease;
+    z-index: 0;
+}
+
+/* 
+.tab-item.active::before,
+.tab-item:hover::before {
+    height: 0;
+    opacity: 0;
+} */
+
+/* Active Tab Styling */
+/* .tab-item.active {
+    height: 50px; 
+    padding-top: 20px;
+    margin-bottom: 20px;
+    background: linear-gradient(106.64deg, rgba(255, 173, 50, 0.3) 0%, rgba(255, 173, 50, 0.3) 203.52%); 
+} */
+
+/* Active Content Styling */
+.tab-content {
+    display: none;
+    padding: 20px;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.tab-content-container {
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+}
+
+/* Expand content when active */
+.tab-content.active {
+    display: block; /* Adjust this based on the content length */
+}
+
+.register-button-container {
+    display: flex;
+    justify-content: space-between; /* Distributes space between items */
+    align-items: center; 
+    margin-top: 20px;
+    max-width: 600px; 
+}
+
+.arrow {
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+
+.arrow:hover {
+    color: #ffcc00; /* Highlight color on hover */
+}
+
+.register-button {
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-left: 20px; 
+    margin-right: 20px;
+}
+
+.register-button:hover {
+    background-color: #f5b700; /* Darker gold color on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+   
+    .tab-menu {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .tab-item {
+        font-size: 12px; 
+    }
+
+    .description-box {
+        /* padding: 30px; */
+        width: 100%;
+        height: auto;
+    }
+    .tab-menu-container{
+        margin-top: 0px;
+    }
+    .description-header{
+        font-size: 18px;
+        margin-top: 5px;
+    }
+    .event-title{
+        font-size: 20px;
+       
+    }
+}
+
+@media (max-width: 600px) {
+    .tab-menu {
+        display: flex;
+        justify-content: center; /* Center the active tab */
+        align-items: center;
+        position: relative;
+        width: 80%; /* Reduce width of the description box */
+        padding: 0;
+        box-shadow: none;
+        overflow: hidden; /* Hide the overflow to ensure swipe works smoothly */
+    }
+
+    .tab-item {
+        display: none; /* Hide all tabs by default */
+    }
+
+    .tab-item.active {
+        display: block; /* Show only the active tab */
+        background-color: rgba(248, 208, 0, 0.5); /* Active tab background */
+        padding: 10px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    /* Arrows for navigation on mobile */
+    .arrow-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+    }
+
+    /* Common arrow styles */
+    .arrow {
+        font-size: 18px;
+        color: #fff;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.5); 
+        padding: 10px;
+        border-radius: 50%;
+        transition: background-color 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .arrow:hover {
+        background-color: rgba(255, 255, 255, 0.2); 
+    }
+
+    /* Position the left arrow */
+    .arrow-left {
+        position: absolute;
+        left: 0px; /* Move arrow just outside the description box */
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    /* Position the right arrow */
+    .arrow-right {
+        position: absolute;
+        right: 0px; /* Move arrow just outside the description box */
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    /* Description Box */
+    .description-box {
+        width: 90%; /* Reduce the width */
+        padding: 20px;
+        position: relative;
+        margin: 0 auto; /* Center the box */
+    }
+
+    .description-text {
+        max-height: 500px;
+        overflow-y: auto;
+        scrollbar-color: #f8d000 rgba(255, 255, 255, 0.1); /* Yellow scrollbar */
+        scrollbar-width: thin;
+    }
+
+    .description-text::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .description-text::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .description-text::-webkit-scrollbar-thumb {
+        background-color: #f8d000;
+        border-radius: 10px;
+    }
+
+    .description-text::-webkit-scrollbar-thumb:hover {
+        background-color: #ffc300;
+    }
+
+    /* Register button container */
+    .register-button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
