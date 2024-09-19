@@ -70,7 +70,7 @@ const Payment = () => {
   return (
     <div className="Eee__pay-main">
       <div className="Eee__pay-heading">
-        <img src={payment_heading} alt="Payment" />
+        <img className ='pay_main'src={payment_heading} alt="Payment" />
       </div>
 
       <div className="Eee__pay_inst-delt">
@@ -172,15 +172,15 @@ const Payment = () => {
                   checked={formValues.paymentMode === 'card'}
                   onChange={handleChange}
                 />
-                  accept term & condition
-              </label>
+                  <span className='Eee__pay-radio-p'> Accept term & condition</span>
+                  </label>
               {errors.paymentMode && <p className="error-text">{errors.paymentMode}</p>}
             </div>
           </form>
 
           <div className="Eee__pay-icon-holder">
             <div className="Eee__pay-det-gpay">
-              <img src={gpay} alt="Gpay" />
+              <img className='Eee__gpay-svg'src={gpay} alt="Gpay" />
             </div>
           </div>
 
@@ -199,19 +199,19 @@ const Payment = () => {
 
       <div className="Eee__pay-alconesy">
         <div className="Eee__pay-aloconesy-svg">
-          <img src={alconesylogo} alt="Alconesy" />
+          <img  src={alconesylogo} alt="Alconesy" />
         </div>
         <div className="Eee__pay-cloud-container">
           <div className="Eee__pay-cloud-svg">
             <PhotoUpload />
             <img className="pay__cloud_img" src={cloud} alt="Upload" />
           </div>
-          <p className="Eee__pay-inst-p">Drag and Drop or <a className="Eee__pay-browse" href="#">browse</a></p>
+          <p className="Eee__pay-drag-p">Drag and Drop or <a className="Eee__pay-browse" href="#">browse</a></p>
           <p className="pay__cloud-p">Upload your payment receipt</p>
           <p className="pay__cloud-p-small">Support formats: JPEG, PNG</p>
         </div>
         <div className="Eee__pay-aloconesy-svg">
-          <img src={alconesylogo} alt="Alconesy" />
+          <img  src={alconesylogo} alt="Alconesy" />
         </div>
       </div>
 
