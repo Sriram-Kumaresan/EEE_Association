@@ -7,7 +7,11 @@ import {Events,Events_secA,Events_secB,Events_secC,Events_secD,Events_secE,Home,
 
 import "./App.css";
 import"./index.css";
-import { Description, EventTwo_des } from "./pages";
+import { Description,
+   EventTwo_des,
+   Payment,
+  
+  } from "./pages";
 
 const App = () => {
   const location = useLocation();
@@ -20,6 +24,8 @@ const App = () => {
       <Navbar/>
       <Routes>
         <Route path="/" element={<Description />} />
+        <Route path="/Payment" element={<Payment />} />
+
         {/* <Route path="/" element={<EventTwo_des />} /> */}
         {/* <Route path="/Events_secA" element={<Events_secA />} /> */}
 
