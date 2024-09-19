@@ -8,4 +8,5 @@ export {default as Events_secE} from './Events_secE/Events_secE';
 export {default as Contact} from './Contact/Contact';
 export {default as Description} from './Description/Description';
 export {default as EventTwo_des} from './EventTwo_des/EventTwo_des';
+export {default as Accomodation} from './Accomodation/Accomodation';
 export {default as Payment} from './Payment/Payment';
