@@ -300,8 +300,10 @@
 /* Media Query for Devices with max-width 480px */
 @media (max-width: 480px) {
   .Eee__pay-heading {
-    padding: 10px;
-    font-size: 18px;
+    padding: 6px 12px 1px;
+    width: 50%;
+    height: 50%;
+
   }
 
   .Eee__pay-inst-delt {
