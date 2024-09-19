@@ -83,7 +83,7 @@ const Navbar = () => {
             <div className='navbar_menu_text'>LOGIN</div>
           </a>
 
-          <a href='/payment' className={`navbar_menu_holder ${windowpath==='/payment'?'selected_menu':''}`}>
+          <a href='/Payment' className={`navbar_menu_holder ${windowpath==='/payment'?'selected_menu':''}`}>
             <div className='navbar_menu_img_cont'>
               <img src={menu3} alt='Payment Icon' className='navbar_menu_img'/>
             </div>
