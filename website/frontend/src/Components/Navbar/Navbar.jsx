@@ -110,7 +110,6 @@ const Navbar = () => {
             </div>
             <div className='navbar_menu_text'>TEAM</div>
           </a>
-
         </div>
 
       </div>
