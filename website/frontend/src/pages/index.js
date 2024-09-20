@@ -10,3 +10,4 @@ export {default as Description} from './Description/Description';
 export {default as EventTwo_des} from './EventTwo_des/EventTwo_des';
 export {default as Accomodation} from './Accomodation/Accomodation';
 export {default as Payment} from './Payment/Payment';
+export {default as Teams} from './Teams/Teams';
