@@ -261,19 +261,28 @@ color: #FFFFFF;
 }
 
 /* Media Query for Devices with max-width 768px */
-@media (max-width: 768px) {
+@media (max-width: 1199px) {
   .Eee__pay-main {
-    padding: 10px;
+    padding: 35px 40px;
   }
 
   .Eee__pay-heading {
-    padding: 20px 20px 3px;
-    font-size: 20px;
+    padding: 0;
   }
 
+  .Eee__pay-inst-cont
+  {
+    margin:10px 0px 2px 14px;
+
+  }
   .Eee__pay-inst-delt {
-    flex-direction: column;
+    /* margin:10px 48px; */
+    /* flex-direction: column; */
     align-items: center;
+  }
+  .Eee__pay-det{
+    margin-left:  30px;
+    margin-right: 10px;
   }
 
   .Eee__pay-inst-hd,
@@ -290,15 +299,40 @@ color: #FFFFFF;
     width: 40px;
     height: 40px;
   }
+  .Eee__gpay-svg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Eee__gpay_qr_container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Eee__gpay-aside-inp{
+    margin-top: 28px;
+    margin-right: 0;
+  }
+  .Eee__pay-icon-holder{
+    padding-bottom: 50px;
+  }
+  .Eee__gpay-svg{
+    margin-top: -35px;
+    /* padding-bottom: 50px; */
+  }
 
   .Eee__pay-inst-form-inp,
   .pay__gpay-inp,
   .Eee__pay-det-inp-half {
     width: 100%;
-    padding: 8px;
+    padding: 8px ;
     margin: 8px 0;
   }
 
+  .Eee__pay-alconesy{
+    padding-top: 30px;
+    margin: 0;
+  }
   .Eee__pay-cloud-container {
     margin: 10px;
     padding: 20px;
@@ -315,9 +349,9 @@ color: #FFFFFF;
 }
 
 /* Media Query for Devices with max-width 480px */
-@media (max-width: 480px) {
+@media (max-width: 560px) {
   .Eee__pay-main{
-    padding: 8px 16px;
+    padding: 8px 18px 12px 30px;
 
   }
   .Eee__pay-heading{
@@ -340,6 +374,9 @@ color: #FFFFFF;
   } */
    .Eee__pay-det-cont{
     padding-left: 7px;
+   }
+   .Eee__pay-det{
+    margin: 8px;
    }
 
   .Eee__pay-inst-hd,
@@ -385,6 +422,9 @@ color: #FFFFFF;
    display: none; 
   }
   .Eee__pay-alconesy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0;
   }
 
