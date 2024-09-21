@@ -1,0 +1,144 @@
+.full-page-bg {
+    background-image: url('../../asset/event_land.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: center;
+}
+
+.event_heading {
+    padding-top: 10%;
+    color: rgb(222, 170, 1);
+    font-size: 48px;
+    padding-left: 10%;
+    font-family: Azonix;
+    font-weight: 400;
+}
+
+.event_cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    padding: 5% 5% 50px;
+}
+
+/* Individual card adjustments */
+.card-widget{
+    flex: 1 1 calc(33.33% - 40px);
+    max-width: calc(33.33% - 40px);
+    overflow: hidden;
+}
+
+/* Card text adjustments to prevent wrapping */
+.card-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablet view (768px and below) */
+@media (max-width: 768px) {
+    .event_heading {
+        font-size: 36px;
+        padding-left: 10%;
+        padding-top: 5%;
+    }
+
+    .event_cards {
+        gap: 30px;
+    }
+
+    .card-widget, .event_card4 {
+        flex: 1 1 calc(50% - 30px);
+        max-width: calc(50% - 30px);
+    }
+
+    .event_cards > .event_card4:nth-child(odd) {
+        margin: 0 auto;
+    }
+}
+
+/* Mobile view (425px and below) */
+@media (max-width: 425px) {
+    .event_heading {
+        font-size: 28px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .event_cards {
+        gap: 20px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+  
+    .card-widget, .event_card4 {
+        flex: 1 1 100%;
+        max-width: 100%; 
+    }
+
+    /* Prevent text wrapping on small screens */
+    .card-text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+/* Small Mobile view (375px and below) */
+@media (max-width: 375px) {
+    .event_heading {
+        font-size: 26px;
+        padding-left: 20%;
+        padding-right: 4%;
+    }
+
+    .event_cards {
+        gap: 15px;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .card-widget, .event_card4 {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .card-text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+/* Extra Small Mobile view (320px and below) */
+@media (max-width: 320px) {
+    .event_heading {
+        font-size: 24px;
+        padding-left: 15%;
+        padding-right: 3%;
+    }
+
+    .event_cards {
+        gap: 10px;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .card-widget, .event_card4 {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .card-text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

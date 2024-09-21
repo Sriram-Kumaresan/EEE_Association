@@ -1,0 +1,431 @@
+.contact_bg {
+    background-image: url('../../asset/contact_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+}
+
+.contact_heading {
+    color: rgb(222, 170, 1);
+    font-size: 48px;
+    padding-top: 10%;
+    padding-left: 10%;
+    font-family: Azonix;
+    font-weight: 400;
+}
+
+.contact_icons {
+    display: flex;
+    margin-left: 20%;
+    gap: 60px;
+    margin-top: 10%;
+    margin-bottom: 0;
+}
+
+.mail-img {
+    width: 50px;
+    height: 50px;
+}
+
+.lin-img {
+    width: 50px;
+    height: 50px;
+}
+
+.fac-img {
+    width: 50px;
+    height: 50px;
+}
+
+.cbot_img {
+    width: 364px;
+    height: 364px;
+}
+
+.contact_bot_img {
+    padding-left: 50px;
+    margin-top: -40px; 
+}
+
+.contact_small_paras_div {
+    position: absolute;
+    right: 50px;
+    top: 70px;
+    width: 500px;
+    height: calc(100vh - 50px);
+    
+    /* Glassmorphism background */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    
+    /* Border */
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for glass effect */
+    
+    /* Box shadow for depth */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    
+    /* Backdrop filter for blur effect */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    
+    /* Additional styles */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contact_div_heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    font-family: Azonix;
+    color:rgb(222, 170, 1);
+}
+
+.contact_paras {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    /* padding-left: 40px; */
+}
+
+/* .p1, .p2 {
+    text-align:center;
+} */
+
+.p1 p, .p2 p {
+    margin: 5px 0;
+    
+}
+
+.contact_paras div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: Azonix;
+}
+@media(max-width:1440px){
+    .contact_small_paras_div {
+        position: absolute;
+        right:15%;
+        top: 70px;
+        width: 500px;
+        height: 500px;
+        background-color: #70707033;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: 2px solid #878686;
+    }
+}
+
+@media(max-width:1244px){
+    .contact_small_paras_div {
+        position: absolute;
+        right: 10px;
+        top: 70px;
+        width: 500px;
+        height: 500px;
+        background-color: #70707033;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: 2px solid #878686;
+    }
+}
+@media(max-width:1000px){
+    .contact_bg {
+        flex-direction: column;
+      
+    }
+    .contact_heading{
+        font-size: 52px;
+        padding-left: 0;
+        text-align: center;
+    }
+    .contact_icons {
+        margin-left: 0;
+        margin-top: 5%;
+        gap: 25px; /* Reduced gap for smaller screens */
+        justify-content: center; /* Center the icons */
+       
+    }
+
+    .contact_bot_img {
+      
+        margin-top: 20px;
+        display: flex;
+       justify-content: center;
+        align-items: center;
+    }
+
+    .contact_small_paras_div {
+        position: static;
+        width: 100%;
+       left: 20px;
+        max-width: 80%;
+        height: 80%; /* Allows the height to adapt to content */
+        margin-top: 20px; 
+        margin-bottom: 30px;
+        margin-left: 60px;
+        background-color: #70707033;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: 2px solid #878686;
+    }
+    
+    .contact_paras {
+        grid-template-columns: 1fr 1fr; /* Stacks the paragraphs in one column */
+        gap: 10px;
+        margin-left: 30px;
+    }
+    
+    .cbot_img {
+        width: 350px; /* Adjust size for smaller screens */
+        height: 350px;
+    }
+}
+@media (max-width: 768px) {
+    .contact_bg {
+        flex-direction: column;
+      
+    }
+    .contact_heading{
+        font-size: 52px;
+        padding-left: 0;
+        text-align: center;
+    }
+    .contact_icons {
+        margin-left: 0;
+        margin-top: 5%;
+        gap: 25px; /* Reduced gap for smaller screens */
+        justify-content: center; /* Center the icons */
+       
+    }
+
+    .contact_bot_img {
+      
+        margin-top: 20px;
+        display: flex;
+       justify-content: center;
+        align-items: center;
+    }
+
+    .contact_small_paras_div {
+        position: static;
+        width: 100%;
+       left: 20px;
+        max-width: 80%;
+        height: 80%; /* Allows the height to adapt to content */
+        margin-top: 20px; 
+        margin-bottom: 30px;
+        margin-left: 60px;
+        background-color: #70707033;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: 2px solid #878686;
+    }
+    
+    .contact_paras {
+        grid-template-columns: 1fr 1fr; /* Stacks the paragraphs in one column */
+        gap: 10px;
+        margin-left: 30px;
+    }
+    
+    .cbot_img {
+        width: 350px; /* Adjust size for smaller screens */
+        height: 350px;
+    }
+}
+@media(max-width:500px){
+    .contact_heading {
+        font-size: 42px !important; /* Ensure font size is smaller */
+        padding-top: 5%;
+        padding-left: 0;
+        text-align: center; /* Center the heading */
+    }
+    .contact_small_paras_div {
+        width: 100%;
+        max-width: 90%;
+        height: auto;
+        margin: 30px auto; /* Center the div horizontally */
+        padding: 15px;
+        background-color: #70707033;
+        color: white;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: 2px solid #878686;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centers the content inside */
+    }
+}
+
+/* Styles for screen width 425px and below */
+@media (max-width: 425px) {
+    .contact_heading {
+        font-size: 32px !important; /* Ensure font size is smaller */
+        padding-top: 5%;
+        padding-left: 0;
+        text-align: center; /* Center the heading */
+    }
+
+    .contact_icons {
+        margin-left: 0;
+        margin-top: 5%;
+        gap: 15px; /* Reduced gap for smaller screens */
+        justify-content: center; /* Center the icons */
+    }
+
+    .mail-img, .lin-img, .fac-img {
+        width: 40px !important; /* Smaller icon size */
+        height: 40px !important;
+    }
+
+    .contact_bot_img {
+        padding-left: 0;
+        margin-top: 15px;
+        display: flex;
+        justify-content: center; /* Center the bottom image */
+        align-items: center;
+    }
+
+    .cbot_img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .contact_small_paras_div {
+        width: 100%;
+        max-width: 90%;
+        height: auto;
+        margin: 30px auto; /* Center the div horizontally */
+        padding: 15px;
+        background-color: #70707033;
+        color: white;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: 2px solid #878686;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centers the content inside */
+    }
+
+    .contact_div_heading {
+        font-size: 20px !important; /* Smaller heading font */
+        margin-bottom: 20px;
+        text-align: center; /* Center the heading */
+    }
+
+    .contact_paras {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+        gap: 10px;
+    }
+}
+
+/* Styles for screen width 375px and below */
+@media (max-width: 375px) {
+    .contact_heading {
+        font-size: 28px;
+        padding-top: 5%;
+    }
+
+    .contact_icons {
+        gap: 10px; /* Reduced gap for smaller icons */
+        justify-content: center;
+    }
+
+    .mail-img, .lin-img, .fac-img {
+        width: 35px; /* Further reduced icon size */
+        height: 35px;
+    }
+
+    .cbot_img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .contact_small_paras_div {
+        width: 90%;
+        padding: 30px;
+        margin: 15px auto; /* Ensure centering */
+    }
+
+    .contact_div_heading {
+        font-size: 18px;
+    }
+}
+
+/* Styles for screen width 320px and below */
+@media (max-width: 320px) {
+    .contact_heading {
+        font-size: 24px;
+        padding-top: 5%;
+    }
+
+    .contact_icons {
+        gap: 8px;
+    }
+
+    .mail-img, .lin-img, .fac-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .cbot_img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .contact_small_paras_div {
+        width: 90%;
+        padding: 30px;
+        margin: 10px auto;
+        margin-bottom: 20px; /* Centering on small screens */
+    }
+
+    .contact_div_heading {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .contact_paras {
+        gap: 5px;
+    }
+}
