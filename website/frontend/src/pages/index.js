@@ -1,3 +1,5 @@
+export {default as Registration} from './Registration/Registration'
+export {default as SignIn} from './Sign_in/Sign_in';
 export {default as Events} from './Events/Events';
 export {default as Events_paper_p} from './Events_paper_p/Events_paper_p';
 export {default as Home} from './Home/Home'
@@ -11,3 +13,4 @@ export {default as Description} from './Description/Description';
 export {default as EventTwo_des} from './EventTwo_des/EventTwo_des';
 export {default as Accomodation} from './Accomodation/Accomodation';
 export {default as Payment} from './Payment/Payment';
+export {default as Teams} from './Teams/Teams';

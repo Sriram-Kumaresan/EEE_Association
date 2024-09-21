@@ -26,13 +26,6 @@ const Navbar = () => {
   },[])
 
   const navbarToggler=()=>{
-    console.log(navopen)
-    if(navopen){
-      console.log("closing")
-    }else{
-      console.log("opening")
-    }
-
     if(firstflag===0){
       setFirstflag(1)
     }
@@ -104,13 +97,12 @@ const Navbar = () => {
             <div className='navbar_menu_text'>ACCOMMODATION</div>
           </a>
 
-          <a href='/team' className={`navbar_menu_holder ${windowpath==='/team'?'selected_menu':''}`}>
+          <a href='/Team' className={`navbar_menu_holder ${windowpath==='/team'?'selected_menu':''}`}>
             <div className='navbar_menu_img_cont'>
               <img src={menu5} alt='Team Icon' className='navbar_menu_img'/>
             </div>
             <div className='navbar_menu_text'>TEAM</div>
           </a>
-
         </div>
 
       </div>
