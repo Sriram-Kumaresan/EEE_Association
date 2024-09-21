@@ -1,10 +1,13 @@
+export {default as Registration} from './Registration/Registration'
+export {default as SignIn} from './Sign_in/Sign_in';
 export {default as Events} from './Events/Events';
-export {default as Events_secA} from './Events_secA/Events_secA';
+export {default as Events_paper_p} from './Events_paper_p/Events_paper_p';
 export {default as Home} from './Home/Home'
-export {default as Events_secB} from './Events_secB/Events_secB';
-export {default as Events_secC} from './Events_secC/Events_secC';
-export {default as Events_secD} from './Events_secD/Events_secD';
-export {default as Events_secE} from './Events_secE/Events_secE';
+export {default as Events_Project} from './Events_Project/Events_Project';
+export {default as Events_Frame} from './Events_Frame/Events_Frame';
+export {default as Events_Treasure} from './Events_Treasure/Events_Treasure';
+export {default as Events_Circuit} from './Events_Circuit/Events_Circuit';
+export {default as Events_photon} from './Events_photon/Events_photon';
 export {default as Contact} from './Contact/Contact';
 export {default as Description} from './Description/Description';
 export {default as Flash} from './Description/Flash';
@@ -20,3 +23,7 @@ export {default as Tycoon} from './Description/Tycoon';
 export {default as Error} from './Description/Error';
 
 export {default as Workshop} from './Workshop/Workshop';
+
+export {default as Accomodation} from './Accomodation/Accomodation';
+export {default as Payment} from './Payment/Payment';
+export {default as Teams} from './Teams/Teams';

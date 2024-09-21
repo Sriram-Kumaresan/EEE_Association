@@ -3,7 +3,7 @@
     height: fit-content;
     min-height: 100vh;
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     /* inset: 50px; */
@@ -116,9 +116,16 @@
     
 }
 
-.selected_menu{
+.navbar_menu_holder:hover{
     border-bottom: #FFE7C5 3px solid;
     border-top: #FFE7C5 3px solid;
+    background: rgb(255,231,197);
+background: radial-gradient(circle, rgba(255,231,197,0.5) 0%, rgba(120,120,120,0) 100%);
+}
+
+.selected_menu{
+    border-bottom: #ffad32 3px solid;
+    border-top: #ffad32 3px solid;
     background: rgb(255,231,197);
 background: radial-gradient(circle, rgba(255,231,197,0.5) 0%, rgba(120,120,120,0) 100%);
 }
