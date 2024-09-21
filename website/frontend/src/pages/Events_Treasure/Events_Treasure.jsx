@@ -15,7 +15,7 @@ const Events = () => {
         image={secD1} 
         text="ERROR EVASION" 
         subtext="- TREASURE CLOGIC"
-        targetUrl="/book"
+        targetUrl="/error"
       />
       <Event_sec_card 
         image={secD2} 

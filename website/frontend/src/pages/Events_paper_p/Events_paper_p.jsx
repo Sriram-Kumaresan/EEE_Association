@@ -14,7 +14,7 @@ const Events_secA = () => {
             image={secA1} 
             text="COLLOQUIUM" 
             subtext="- PAPER PURSUIT"
-            targetUrl="/book"
+            targetUrl="/colloquium"
           />
 
        
@@ -29,7 +29,7 @@ const Events_secA = () => {
             image={secA3} 
             text="SHERLOCK HOLMES" 
             subtext="- PAPER PURSUIT"
-            targetUrl="/books"
+            targetUrl="/sherlock"
           />
       
       </div>

@@ -37,12 +37,12 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/event1" element={<Description />} />
         <Route path="/event2" element={<EventTwo_des />} />
-        <Route path="/events_paper_p" element={<Events_paper_p />} />
-        <Route path="/events_Project" element={<Events_Project />} />
-        <Route path="/events_Frame" element={<Events_Frame/>} />
-        <Route path="/events_Treasure" element={<Events_Treasure />} />
-        <Route path="/events_Circuit" element={<Events_Circuit />} />
-        <Route path="/events_photon" element={<Events_photon />} />
+        <Route path="/paperpursuit" element={<Events_paper_p />} />
+        <Route path="/projectopoly" element={<Events_Project />} />
+        <Route path="/frameflix" element={<Events_Frame/>} />
+        <Route path="/treasurelogic" element={<Events_Treasure />} />
+        <Route path="/circuitcharades" element={<Events_Circuit />} />
+        <Route path="/photonkickoff" element={<Events_photon />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="/signin" element={<SignIn />} />
