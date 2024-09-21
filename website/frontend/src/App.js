@@ -27,15 +27,9 @@ const App = () => {
     <div>
       <Navbar/>
       <Routes>
-        <Route path="/" element={<Description />} />
-        <Route path="/Payment" element={<Payment />} />
-        <Route path="/Teams" element={<Teams />} />
-
-        {/* <Route path="/" element={<EventTwo_des />} /> */}
-        {/* <Route path="/Events_secA" element={<Events_secA />} /> */}
-
-       
-        <Route path="/" element={<EventTwo_des />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/event1" element={<Description />} />
+        <Route path="/event2" element={<EventTwo_des />} />
         <Route path="/Events_secA" element={<Events_secA />} />
         <Route path="/Events_secB" element={<Events_secB />} />
         <Route path="/Events_secC" element={<Events_secC/>} />
