@@ -2,19 +2,19 @@ import React, { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 
 import {Navbar, Footer} from './Components'
-import {Events,Events_paper_p,Events_Project,Events_Frame,Events_Treasure,Events_Circuit,Events_photon,Home,Contact,Accomodation} from './pages'
+import {Events_Project,Events_Frame,Events_Treasure,Events_Circuit,Events_photon} from './pages'
 
 
 import "./App.css";
 import"./index.css";
-import {Navbar, Footer} from './Components'
+
 
 import {Description,
   SignIn,
   Registration,
   EventTwo_des,
   Events,
-  Events_secA,
+  Events_paper_p,
   Events_secB,
   Events_secC,Events_secD,
   Events_secE,
