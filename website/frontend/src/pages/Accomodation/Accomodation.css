@@ -58,6 +58,13 @@
     text-align: center;
     padding: 15px;
 }
+@media(max-width:1440px){
+    .acco_container {
+        width: 85%; 
+        margin-left: 10%;
+        margin-right: 5%; 
+    }
+}
 @media (max-width: 1024px) {
     .acco_container {
         width: 85%; 

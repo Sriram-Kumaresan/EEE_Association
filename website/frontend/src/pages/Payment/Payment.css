@@ -1,0 +1,452 @@
+.Eee__pay-main {
+
+  background-image: url('../../asset/payment_bg.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+
+}
+
+.Eee__pay_inst-delt {
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.Eee__pay-heading {
+  padding: 60px 120px 3px;
+  letter-spacing: 0.43em;
+  text-shadow: 0px 4px 4px rgb(0, 0, 5);
+}
+
+.Eee__pay-inst-p {
+  font-family: 'Lexend', sans-serif;
+  color: #FFFFFF;
+  font-weight: 200;
+  text-align: center;
+  font-size: 16px;
+  text-align: justify;
+}
+.Eee__pay-drag-p {
+  font-family: 'Lexend', sans-serif;
+  color: #FFFFFF;
+  font-weight: 200;
+  text-align: center;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.Eee__pay-info {
+  font-weight: bolder;
+}
+
+.Eee__pay-det{
+  /* margin-left: 30px; */
+}
+.Eee__pay-inst-hd{
+  margin: 60px 120px 0px;
+  font-family: 'Azonix', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #FFDEACE0;
+}
+.Eee__pay-det-hd {
+  margin: 60px 10px 0px;
+  font-family: 'Azonix', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #FFDEACE0;
+}
+
+
+.Eee__pay-inst-cont {
+  margin: 10px 120px;
+  font-family: 'Lexend', sans-serif;
+  line-height: 30px;
+  font-size: 16px;
+}
+.Eee__pay-det-cont {
+  margin: 6px 10px;
+  font-family: 'Lexend', sans-serif;
+  line-height: 30px;
+  font-size: 16px;
+}
+
+.Eee__pay-icon-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.Eee__pay-bank-icon {
+  padding: 3px;
+  margin: 50px 0px 2px;
+  width: 70px;
+  height: 70px;
+}
+
+.Eee__pay-inst-form-inp {
+  width: 84%;
+  padding: 13.5px;
+  margin: 13px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+.pay__gpay-inp {
+  width: 100%;
+  padding: 13.5px;
+  margin: 13px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+.Eee__pay-det-inp-half {
+  width: 40%;
+  padding: 13.5px;
+  margin: 13px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+.Eee__pay-det-gpay {
+  display: flex;
+  margin-top: 50px;
+}
+
+.Eee__gpay_qr_container {
+  display: flex;
+  margin-top: 10px;
+}
+
+.Eee__gpay-svg {
+  margin-top: -10px;
+}
+
+.Eee__pay-radio{
+  margin-top:4px;
+}
+.Eee__pay-radio-p{
+color: #FFFFFF;
+}
+
+.Eee__gpay-aside-inp {
+  margin: 8px;
+}
+
+.Eee__pay-alconesy {
+  display: flex;
+  margin: 150px 200px 0px;
+  justify-content: space-between;
+}
+
+.Eee__pay-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 40px 80px 40px;
+}
+
+.Eee__pay-cloud-container {
+  margin-top: -40px;
+  padding: 50px 120px;
+  border: 1px dashed #FFAD32;
+  border-radius: 5px;
+}
+
+.Eee__pay-cloud-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.pay__cloud-p {
+  font-family: 'Lexend', sans-serif;
+  color: #FFFFFF;
+  font-size: 12px;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.pay__cloud-p-small {
+  font-family: 'Lexend', sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  line-height: 1.5rem;
+  text-align: center;
+}x
+
+.pay__cloud_img {
+  margin-left: 5px;
+}
+
+.Eee__pay-sbt-button{
+  padding:   15px 75px ;
+  color: white;
+  background-color: #FFAD3261;
+  border: 1px solid #FEE356;
+  border-radius: 5px;
+
+
+}
+.Eee__pay-browse{
+  color:  #FFAD32;
+}
+
+/* Media Query for Devices with max-width 1200px */
+@media (max-width: 1200px) {
+  .Eee__pay-inst-delt {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Eee__pay-inst-p,
+  .Eee__pay-info,
+  .Eee__pay-det,
+  .Eee__pay-det-cont {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+  }
+
+  .Eee__pay-heading {
+    padding: 30px 60px 3px;
+    font-size: 22px;
+  }
+
+  .Eee__pay-inst-hd,
+  .Eee__pay-det-hd {
+    margin: 30px 20px;
+    font-size: 18px;
+  }
+
+  .Eee__pay-icon-holder {
+    flex-direction: column;
+  }
+
+  .Eee__pay-bank-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .Eee__pay-inst-form-inp,
+  .pay__gpay-inp,
+  .Eee__pay-det-inp-half {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  .Eee__pay-cloud-container {
+    margin: 20px 10px;
+    padding: 30px 20px;
+  }
+
+  .Eee__pay-button {
+    padding: 20px;
+  }
+
+  .pay__cloud-p,
+  .pay__cloud-p-small {
+    font-size: 10px;
+  }
+}
+
+/* Media Query for Devices with max-width 768px */
+@media (max-width: 1199px) {
+  .Eee__pay-main {
+    padding: 35px 40px;
+  }
+
+  .Eee__pay-heading {
+    padding: 0;
+  }
+
+  .Eee__pay-inst-cont
+  {
+    margin:10px 0px 2px 14px;
+
+  }
+  .Eee__pay-inst-delt {
+    /* margin:10px 48px; */
+    /* flex-direction: column; */
+    align-items: center;
+  }
+  .Eee__pay-det{
+    margin-left:  30px;
+    margin-right: 10px;
+  }
+
+  .Eee__pay-inst-hd,
+  .Eee__pay-det-hd {
+    margin: 20px 10px;
+    font-size: 16px;
+  }
+
+  .Eee__pay-icon-holder {
+    flex-direction: column;
+  }
+
+  .Eee__pay-bank-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .Eee__gpay-svg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Eee__gpay_qr_container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Eee__gpay-aside-inp{
+    margin-top: 28px;
+    margin-right: 0;
+  }
+  .Eee__pay-icon-holder{
+    padding-bottom: 50px;
+  }
+  .Eee__gpay-svg{
+    margin-top: -35px;
+    /* padding-bottom: 50px; */
+  }
+
+  .Eee__pay-inst-form-inp,
+  .pay__gpay-inp,
+  .Eee__pay-det-inp-half {
+    width: 100%;
+    padding: 8px ;
+    margin: 8px 0;
+  }
+
+  .Eee__pay-alconesy{
+    padding-top: 30px;
+    margin: 0;
+  }
+  .Eee__pay-cloud-container {
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .Eee__pay-button {
+    padding: 15px;
+  }
+
+  .pay__cloud-p,
+  .pay__cloud-p-small {
+    font-size: 8px;
+  }
+}
+
+/* Media Query for Devices with max-width 480px */
+@media (max-width: 560px) {
+  .Eee__pay-main{
+    padding: 8px 18px 12px 30px;
+
+  }
+  .Eee__pay-heading{
+    margin: 13px 0px;
+
+  }
+  .pay_main{
+    width: 78%;
+    height: 78%;
+  }
+
+  .Eee__pay_inst-delt{
+    display: flex;
+    flex-direction: column;
+
+  }
+  /* .Eee__pay-delt {
+    flex-direction: column;
+    flex-wrap: wrap;
+  } */
+   .Eee__pay-det-cont{
+    padding-left: 7px;
+   }
+   .Eee__pay-det{
+    margin: 8px;
+   }
+
+  .Eee__pay-inst-hd,
+  .Eee__pay-det-hd {
+    margin: 3px 10px;
+    font-size: 12px;
+  }
+  .Eee__pay-inst-cont{
+    margin: 8px;
+
+  }
+
+  .Eee__pay-icon-holder {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .Eee__pay-bank-icon {
+    margin-top: -10px;
+    /* width: 30px;
+    height: 30px; */
+  }
+
+  .Eee__pay-inst-form-inp,
+  .pay__gpay-inp,
+  .Eee__pay-det-inp-half {
+    width: 100%;
+    padding: 6px;
+    margin: 6px 0;
+  }
+  .Eee__gpay-svg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30px;
+  }
+  .Eee__gpay_qr_container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Eee__pay-aloconesy-svg{
+   display: none; 
+  }
+  .Eee__pay-alconesy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .Eee__pay-cloud-container {
+
+    margin: 20px 10px;
+    padding: 15px 60px;
+  }
+  .Eee__pay-drag-p{
+    text-align: center;
+  }
+
+  .Eee__pay-button {
+    padding: 10px;
+  }
+  .Eee__pay-det-hd,
+  .Eee__pay-inst-hd{
+    font-size: 14px;
+  }
+
+  .pay__cloud-p,
+  .pay__cloud-p-small {
+    font-size: 8px;
+  }
+}

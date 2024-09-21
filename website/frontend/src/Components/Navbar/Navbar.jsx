@@ -76,7 +76,7 @@ const Navbar = () => {
             <div className='navbar_menu_text'>LOGIN</div>
           </a>
 
-          <a href='/payment' className={`navbar_menu_holder ${windowpath==='/payment'?'selected_menu':''}`}>
+          <a href='/Payment' className={`navbar_menu_holder ${windowpath==='/payment'?'selected_menu':''}`}>
             <div className='navbar_menu_img_cont'>
               <img src={menu3} alt='Payment Icon' className='navbar_menu_img'/>
             </div>
@@ -97,13 +97,12 @@ const Navbar = () => {
             <div className='navbar_menu_text'>ACCOMMODATION</div>
           </a>
 
-          <a href='/team' className={`navbar_menu_holder ${windowpath==='/team'?'selected_menu':''}`}>
+          <a href='/Team' className={`navbar_menu_holder ${windowpath==='/team'?'selected_menu':''}`}>
             <div className='navbar_menu_img_cont'>
               <img src={menu5} alt='Team Icon' className='navbar_menu_img'/>
             </div>
             <div className='navbar_menu_text'>TEAM</div>
           </a>
-
         </div>
 
       </div>
