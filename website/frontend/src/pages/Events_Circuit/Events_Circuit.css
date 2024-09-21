@@ -1,5 +1,5 @@
-.secC_full-page-bg {
-    background-image: url('../../asset/secC_land.png');
+.secE_full-page-bg {
+    background-image: url('../../asset/secE_land.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -10,7 +10,7 @@
     justify-content: center; */
 }
 
-.secC_event_heading {
+.secE_event_heading {
     color: rgb(222, 170, 1);
     font-size: 48px;
     padding-top: 10%;
@@ -23,7 +23,7 @@
     width: 20px; 
 }
 
-.secC_event_cards {
+.secE_event_cards {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
@@ -40,13 +40,13 @@
 
 
 @media (max-width: 768px) {
-    .secC_event_heading {
+    .secE_event_heading {
         font-size: 36px;
         padding-left: 10%;
         padding-top: 5%;
     }
 
-    .secC_event_cards {
+    .secE_event_cards {
         gap: 30px;
     }
 
@@ -55,16 +55,22 @@
         max-width: calc(50% - 30px);
     }
 }
-
+@media(max-width: 500px){
+    .secE_event_heading {
+        font-size: 20px; /* Adjusted to a smaller font size */
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
 /* Mobile view (425px and below) */
 @media (max-width: 425px) {
-    .secC_event_heading {
-        font-size: 28px;
+    .secE_event_heading {
+        font-size: 18px; /* Adjusted to a smaller font size */
         padding-left: 5%;
         padding-right: 5%;
     }
 
-    .secC_event_cards {
+    .secE_event_cards {
         gap: 20px;
         padding-left: 5%;
         padding-right: 5%;
@@ -83,13 +89,13 @@
 
 /* Small Mobile view (375px and below) */
 @media (max-width: 375px) {
-    .secC_event_heading {
+    .secE_event_heading {
         font-size: 26px;
         padding-left: 20%;
         padding-right: 4%;
     }
 
-    .secC_event_cards {
+    .secE_event_cards {
         gap: 15px;
         padding-left: 4%;
         padding-right: 4%;
@@ -108,13 +114,14 @@
 
 /* Extra Small Mobile view (320px and below) */
 @media (max-width: 320px) {
-    .secC_event_heading {
-        font-size: 24px;
-        padding-left: 15%;
+    .secE_event_heading {
+        font-size: 14px;
+        padding-left: 10%;
         padding-right: 3%;
+        padding-bottom: 10px;
     }
 
-    .secC_event_cards {
+    .secE_event_cards {
         gap: 10px;
         padding-left: 3%;
         padding-right: 3%;
@@ -130,3 +137,6 @@
         white-space: nowrap;
     }
 }
+
+
+

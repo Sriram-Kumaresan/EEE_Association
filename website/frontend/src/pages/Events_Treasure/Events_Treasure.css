@@ -57,11 +57,17 @@
         max-width: calc(50% - 30px);
     }
 }
-
+@media(max-width: 500px){
+    .secD_event_heading {
+        font-size: 21px; /* Adjusted to a smaller font size */
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
 /* Mobile view (425px and below) */
 @media (max-width: 425px) {
     .secD_event_heading {
-        font-size: 28px;
+        font-size: 18px;
         padding-left: 5%;
         padding-right: 5%;
     }
@@ -113,8 +119,8 @@
 /* Extra Small Mobile view (320px and below) */
 @media (max-width: 320px) {
     .secD_event_heading {
-        font-size: 24px;
-        padding-left: 15%;
+        font-size: 14px;
+        padding-left: 10%;
         padding-right: 3%;
     }
 

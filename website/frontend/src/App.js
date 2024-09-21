@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 
 import {Navbar, Footer} from './Components'
-import {Events,Events_secA,Events_secB,Events_secC,Events_secD,Events_secE,Home,Contact,Accomodation} from './pages'
+import {Events,Events_paper_p,Events_Project,Events_Frame,Events_Treasure,Events_Circuit,Events_photon,Home,Contact,Accomodation} from './pages'
 
 
 import "./App.css";
@@ -31,11 +31,12 @@ const App = () => {
 
        
         <Route path="/" element={<EventTwo_des />} />
-        <Route path="/Events_secA" element={<Events_secA />} />
-        <Route path="/Events_secB" element={<Events_secB />} />
-        <Route path="/Events_secC" element={<Events_secC/>} />
-        <Route path="/Events_secD" element={<Events_secD />} />
-        <Route path="/Events_secE" element={<Events_secE />} />
+        <Route path="/events_paper_p" element={<Events_paper_p />} />
+        <Route path="/events_Project" element={<Events_Project />} />
+        <Route path="/events_Frame" element={<Events_Frame/>} />
+        <Route path="/events_Treasure" element={<Events_Treasure />} />
+        <Route path="/events_Circuit" element={<Events_Circuit />} />
+        <Route path="/events_photon" element={<Events_photon />} />
         <Route path="/contact" element={<Contact />} />
 
         <Route path="/events" element={<Events/>} />

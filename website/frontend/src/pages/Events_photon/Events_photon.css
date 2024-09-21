@@ -1,5 +1,5 @@
-.secE_full-page-bg {
-    background-image: url('../../asset/secE_land.png');
+.secF_full-page-bg {
+    background-image: url('../../asset/contact_bg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -10,7 +10,7 @@
     justify-content: center; */
 }
 
-.secE_event_heading {
+.secF_event_heading {
     color: rgb(222, 170, 1);
     font-size: 48px;
     padding-top: 10%;
@@ -23,7 +23,7 @@
     width: 20px; 
 }
 
-.secE_event_cards {
+.secF_event_cards {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
@@ -40,13 +40,13 @@
 
 
 @media (max-width: 768px) {
-    .secE_event_heading {
+    .secF_event_heading {
         font-size: 36px;
         padding-left: 10%;
         padding-top: 5%;
     }
 
-    .secE_event_cards {
+    .secF_event_cards {
         gap: 30px;
     }
 
@@ -55,16 +55,22 @@
         max-width: calc(50% - 30px);
     }
 }
-
+@media(max-width: 500px){
+    .secF_event_heading {
+        font-size: 23px; /* Adjusted to a smaller font size */
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
 /* Mobile view (425px and below) */
 @media (max-width: 425px) {
-    .secE_event_heading {
-        font-size: 28px;
+    .secF_event_heading {
+        font-size: 20px;
         padding-left: 5%;
         padding-right: 5%;
     }
 
-    .secE_event_cards {
+    .secF_event_cards {
         gap: 20px;
         padding-left: 5%;
         padding-right: 5%;
@@ -83,13 +89,13 @@
 
 /* Small Mobile view (375px and below) */
 @media (max-width: 375px) {
-    .secE_event_heading {
+    .secF_event_heading {
         font-size: 26px;
         padding-left: 20%;
         padding-right: 4%;
     }
 
-    .secE_event_cards {
+    .secF_event_cards {
         gap: 15px;
         padding-left: 4%;
         padding-right: 4%;
@@ -108,13 +114,13 @@
 
 /* Extra Small Mobile view (320px and below) */
 @media (max-width: 320px) {
-    .secE_event_heading {
-        font-size: 24px;
-        padding-left: 15%;
+    .secF_event_heading {
+        font-size: 16px;
+        padding-left: 10%;
         padding-right: 3%;
     }
 
-    .secE_event_cards {
+    .secF_event_cards {
         gap: 10px;
         padding-left: 3%;
         padding-right: 3%;
