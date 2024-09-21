@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import './EventTwo_des.css';
-import { EventTwo_content } from "../../constants/description";
+import './Description.css';
+import { Error_cont } from "../../constants/description";
 
-const EventTwo_des = () => {
-    const [activeTab, setActiveTab] = useState(EventTwo_content.tabs[0]);
+const Error = () => {
+    const [activeTab, setActiveTab] = useState(Error_cont.tabs[0]);
     const [touchStart, setTouchStart] = useState(0);
     const [touchEnd, setTouchEnd] = useState(0);
 
@@ -12,28 +12,27 @@ const EventTwo_des = () => {
     };
 
     const handleArrowClick = (direction) => {
-        const currentIndex = EventTwo_content.tabs.indexOf(activeTab);
+        const currentIndex = Error_cont.tabs.indexOf(activeTab);
         let newIndex;
 
         if (direction === 'left') {
-            newIndex = (currentIndex - 1 + EventTwo_content.tabs.length) % EventTwo_content.tabs.length;
+            newIndex = (currentIndex - 1 + Error_cont.tabs.length) % Error_cont.tabs.length;
         } else {
-            newIndex = (currentIndex + 1) % EventTwo_content.tabs.length;
+            newIndex = (currentIndex + 1) % Error_cont.tabs.length;
         }
 
-        setActiveTab(EventTwo_content.tabs[newIndex]);
+        setActiveTab(Error_cont.tabs[newIndex]);
     };
 
-   
     const getTabContent = () => {
         switch (activeTab) {
             case 'Description':
-                return EventTwo_content.descriptionText;
+                return Error_cont.descriptionText;
 
             case 'Rules':
                 return (
                     <ul>
-                        {EventTwo_content.rules.content.map((rule, index) => (
+                        {Error_cont.rules.content.map((rule, index) => (
                             <li key={index}>{rule}</li>
                         ))}
                     </ul>
@@ -41,17 +40,24 @@ const EventTwo_des = () => {
 
             case 'Rounds':
                 return (
-                    <ul>
-                        {EventTwo_content.rounds.content.map((round, index) => (
-                            <li key={index}>{round}</li>
+                    <div>
+                        {Error_cont.rounds.content.map((round, index) => (
+                            <div key={index}>
+                                <h3>{round.title}</h3>
+                                <ul>
+                                    {round.details.map((detail, detailIndex) => (
+                                        <li key={detailIndex}>{detail}</li>
+                                    ))}
+                                </ul>
+                            </div>
                         ))}
-                    </ul>
+                    </div>
                 );
 
             case 'Schedule':
                 return (
                     <ul>
-                        {EventTwo_content.schedule.content.map((item, index) => (
+                        {Error_cont.schedule.content.map((item, index) => (
                             <li key={index}>{item}</li>
                         ))}
                     </ul>
@@ -62,13 +68,13 @@ const EventTwo_des = () => {
                     <div>
                         <p>Phones:</p>
                         <ul>
-                            {EventTwo_content.contactDetails.phones.map((phone, index) => (
+                            {Error_cont.contactDetails.phones.map((phone, index) => (
                                 <li key={index}>{phone}</li>
                             ))}
                         </ul>
                         <p>Emails:</p>
                         <ul>
-                            {EventTwo_content.contactDetails.emails.map((email, index) => (
+                            {Error_cont.contactDetails.emails.map((email, index) => (
                                 <li key={index}>{email}</li>
                             ))}
                         </ul>
@@ -76,7 +82,7 @@ const EventTwo_des = () => {
                 );
 
             default:
-                return EventTwo_content.descriptionText;
+                return Error_cont.descriptionText;
         }
     };
 
@@ -124,8 +130,8 @@ const EventTwo_des = () => {
     return (
         <div className="page-background">
             <div className="description-box">
-                <h1 className="event-title">{EventTwo_content.headerTitle}</h1>
-                <h2 className="description-header">{EventTwo_content[activeTab.toLowerCase()]?.title || 'DESCRIPTION'}</h2>
+                <h1 className="event-title">{Error_cont.headerTitle}</h1>
+                <h2 className="description-header">{Error_cont[activeTab.toLowerCase()]?.title || 'DESCRIPTION'}</h2>
 
                 <p className="description-text">
                     {getTabContent()}
@@ -133,7 +139,7 @@ const EventTwo_des = () => {
 
                 <div className="tab-menu-container">
                     <div className="tab-menu">
-                        {EventTwo_content.tabs.map((tabName, index) => (
+                        {Error_cont.tabs.map((tabName, index) => (
                             <React.Fragment key={index}>
                                 <div
                                     className={`tab-item ${activeTab === tabName ? 'active' : ''}`}
@@ -149,11 +155,11 @@ const EventTwo_des = () => {
 
             <div className="register-button-container">
                 <div className="arrow arrow-left" onClick={() => handleArrowClick('left')}>&#9664;</div>
-                <button className="register-button">{EventTwo_content.registerButtonText}</button>
+                <button className="register-button">{Error_cont.registerButtonText}</button>
                 <div className="arrow arrow-right" onClick={() => handleArrowClick('right')}>&#9654;</div>
             </div>
         </div>
     );
 };
 
-export default EventTwo_des;
+export default Error;

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './Description.css';
-import { Description_content } from "../../constants/description";
+import { Dialux_content } from "../../constants/description";
 
-const Description = () => {
-    const [activeTab, setActiveTab] = useState(Description_content.tabs[0]);
+const Dialux = () => {
+    const [activeTab, setActiveTab] = useState(Dialux_content.tabs[0]);
     const [touchStart, setTouchStart] = useState(0);
     const [touchEnd, setTouchEnd] = useState(0);
 
@@ -12,52 +12,51 @@ const Description = () => {
     };
 
     const handleArrowClick = (direction) => {
-        const currentIndex = Description_content.tabs.indexOf(activeTab);
+        const currentIndex = Dialux_content.tabs.indexOf(activeTab);
         let newIndex;
 
         if (direction === 'left') {
-            newIndex = (currentIndex - 1 + Description_content.tabs.length) % Description_content.tabs.length;
+            newIndex = (currentIndex - 1 + Dialux_content.tabs.length) % Dialux_content.tabs.length;
         } else {
-            newIndex = (currentIndex + 1) % Description_content.tabs.length;
+            newIndex = (currentIndex + 1) % Dialux_content.tabs.length;
         }
 
-        setActiveTab(Description_content.tabs[newIndex]);
+        setActiveTab(Dialux_content.tabs[newIndex]);
     };
 
-   
     const getTabContent = () => {
         switch (activeTab) {
             case 'Description':
-                return Description_content.descriptionText;
+                return Dialux_content.descriptionText;
 
             case 'Rules':
                 return (
                     <ul>
-                        {Description_content.rules.content.map((rule, index) => (
+                        {Dialux_content.rules.content.map((rule, index) => (
                             <li key={index}>{rule}</li>
                         ))}
                     </ul>
                 );
 
-                case 'Rounds':
-                    return (
-                        <div>
-                            {Description_content.rounds.content.map((round, index) => (
-                                <div key={index}>
-                                    <h3>{round.title}</h3>
-                                    <ul>
-                                        {round.details.map((detail, detailIndex) => (
-                                            <li key={detailIndex}>{detail}</li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            ))}
-                        </div>
-                    );
+            case 'Rounds':
+                return (
+                    <div>
+                        {Dialux_content.rounds.content.map((round, index) => (
+                            <div key={index}>
+                                <h3>{round.title}</h3>
+                                <ul>
+                                    {round.details.map((detail, detailIndex) => (
+                                        <li key={detailIndex}>{detail}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
+                    </div>
+                );
             case 'Schedule':
                 return (
                     <ul>
-                        {Description_content.schedule.content.map((item, index) => (
+                        {Dialux_content.schedule.content.map((item, index) => (
                             <li key={index}>{item}</li>
                         ))}
                     </ul>
@@ -68,13 +67,13 @@ const Description = () => {
                     <div>
                         <p>Phones:</p>
                         <ul>
-                            {Description_content.contactDetails.phones.map((phone, index) => (
+                            {Dialux_content.contactDetails.phones.map((phone, index) => (
                                 <li key={index}>{phone}</li>
                             ))}
                         </ul>
                         <p>Emails:</p>
                         <ul>
-                            {Description_content.contactDetails.emails.map((email, index) => (
+                            {Dialux_content.contactDetails.emails.map((email, index) => (
                                 <li key={index}>{email}</li>
                             ))}
                         </ul>
@@ -82,7 +81,7 @@ const Description = () => {
                 );
 
             default:
-                return Description_content.descriptionText;
+                return Dialux_content.descriptionText;
         }
     };
 
@@ -130,8 +129,8 @@ const Description = () => {
     return (
         <div className="page-background">
             <div className="description-box">
-                <h1 className="event-title">{Description_content.headerTitle}</h1>
-                <h2 className="description-header">{Description_content[activeTab.toLowerCase()]?.title || 'DESCRIPTION'}</h2>
+                <h1 className="event-title">{Dialux_content.headerTitle}</h1>
+                <h2 className="description-header">{Dialux_content[activeTab.toLowerCase()]?.title || 'DESCRIPTION'}</h2>
 
                 <p className="description-text">
                     {getTabContent()}
@@ -139,7 +138,7 @@ const Description = () => {
 
                 <div className="tab-menu-container">
                     <div className="tab-menu">
-                        {Description_content.tabs.map((tabName, index) => (
+                        {Dialux_content.tabs.map((tabName, index) => (
                             <React.Fragment key={index}>
                                 <div
                                     className={`tab-item ${activeTab === tabName ? 'active' : ''}`}
@@ -155,11 +154,11 @@ const Description = () => {
 
             <div className="register-button-container">
                 <div className="arrow arrow-left" onClick={() => handleArrowClick('left')}>&#9664;</div>
-                <button className="register-button">{Description_content.registerButtonText}</button>
+                <button className="register-button">{Dialux_content.registerButtonText}</button>
                 <div className="arrow arrow-right" onClick={() => handleArrowClick('right')}>&#9654;</div>
             </div>
         </div>
     );
 };
 
-export default Description;
+export default Dialux;

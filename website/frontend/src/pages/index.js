@@ -7,4 +7,16 @@ export {default as Events_secD} from './Events_secD/Events_secD';
 export {default as Events_secE} from './Events_secE/Events_secE';
 export {default as Contact} from './Contact/Contact';
 export {default as Description} from './Description/Description';
-export {default as EventTwo_des} from './EventTwo_des/EventTwo_des';
+export {default as Flash} from './Description/Flash';
+export {default as Cine} from './Description/Cine';
+export {default as Colloquium} from './Description/Colloquium';
+export {default as Dialux} from './Description/Dialux';
+export {default as Meta} from './Description/Meta';
+export {default as Projectexpo} from './Description/Projectexpo';
+export {default as Robo} from './Description/Robo';
+export {default as Sherlock} from './Description/Sherlock';
+export {default as Snakes} from './Description/Snakes';
+export {default as Tycoon} from './Description/Tycoon';
+export {default as Error} from './Description/Error';
+
+export {default as Workshop} from './Workshop/Workshop';

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './Description.css';
-import { Description_content } from "../../constants/description";
+import { Sherlock_cont } from "../../constants/description";
 
-const Description = () => {
-    const [activeTab, setActiveTab] = useState(Description_content.tabs[0]);
+const Flash = () => {
+    const [activeTab, setActiveTab] = useState(Sherlock_cont.tabs[0]);
     const [touchStart, setTouchStart] = useState(0);
     const [touchEnd, setTouchEnd] = useState(0);
 
@@ -12,52 +12,52 @@ const Description = () => {
     };
 
     const handleArrowClick = (direction) => {
-        const currentIndex = Description_content.tabs.indexOf(activeTab);
+        const currentIndex = Sherlock_cont.tabs.indexOf(activeTab);
         let newIndex;
 
         if (direction === 'left') {
-            newIndex = (currentIndex - 1 + Description_content.tabs.length) % Description_content.tabs.length;
+            newIndex = (currentIndex - 1 + Sherlock_cont.tabs.length) % Sherlock_cont.tabs.length;
         } else {
-            newIndex = (currentIndex + 1) % Description_content.tabs.length;
+            newIndex = (currentIndex + 1) % Sherlock_cont.tabs.length;
         }
 
-        setActiveTab(Description_content.tabs[newIndex]);
+        setActiveTab(Sherlock_cont.tabs[newIndex]);
     };
 
-   
     const getTabContent = () => {
         switch (activeTab) {
             case 'Description':
-                return Description_content.descriptionText;
+                return Sherlock_cont.descriptionText;
 
             case 'Rules':
                 return (
                     <ul>
-                        {Description_content.rules.content.map((rule, index) => (
+                        {Sherlock_cont.rules.content.map((rule, index) => (
                             <li key={index}>{rule}</li>
                         ))}
                     </ul>
                 );
 
-                case 'Rounds':
-                    return (
-                        <div>
-                            {Description_content.rounds.content.map((round, index) => (
-                                <div key={index}>
-                                    <h3>{round.title}</h3>
-                                    <ul>
-                                        {round.details.map((detail, detailIndex) => (
-                                            <li key={detailIndex}>{detail}</li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            ))}
-                        </div>
-                    );
+            case 'Rounds':
+                return (
+                    <div>
+                        {Sherlock_cont.rounds.content.map((round, index) => (
+                            <div key={index}>
+                                <h3>{round.title}</h3>
+                                <ul>
+                                    {round.details.map((detail, detailIndex) => (
+                                        <li key={detailIndex}>{detail}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
+                    </div>
+                );
+
             case 'Schedule':
                 return (
                     <ul>
-                        {Description_content.schedule.content.map((item, index) => (
+                        {Sherlock_cont.schedule.content.map((item, index) => (
                             <li key={index}>{item}</li>
                         ))}
                     </ul>
@@ -68,13 +68,13 @@ const Description = () => {
                     <div>
                         <p>Phones:</p>
                         <ul>
-                            {Description_content.contactDetails.phones.map((phone, index) => (
+                            {Sherlock_cont.contactDetails.phones.map((phone, index) => (
                                 <li key={index}>{phone}</li>
                             ))}
                         </ul>
                         <p>Emails:</p>
                         <ul>
-                            {Description_content.contactDetails.emails.map((email, index) => (
+                            {Sherlock_cont.contactDetails.emails.map((email, index) => (
                                 <li key={index}>{email}</li>
                             ))}
                         </ul>
@@ -82,7 +82,7 @@ const Description = () => {
                 );
 
             default:
-                return Description_content.descriptionText;
+                return Sherlock_cont.descriptionText;
         }
     };
 
@@ -130,8 +130,8 @@ const Description = () => {
     return (
         <div className="page-background">
             <div className="description-box">
-                <h1 className="event-title">{Description_content.headerTitle}</h1>
-                <h2 className="description-header">{Description_content[activeTab.toLowerCase()]?.title || 'DESCRIPTION'}</h2>
+                <h1 className="event-title">{Sherlock_cont.headerTitle}</h1>
+                <h2 className="description-header">{Sherlock_cont[activeTab.toLowerCase()]?.title || 'DESCRIPTION'}</h2>
 
                 <p className="description-text">
                     {getTabContent()}
@@ -139,7 +139,7 @@ const Description = () => {
 
                 <div className="tab-menu-container">
                     <div className="tab-menu">
-                        {Description_content.tabs.map((tabName, index) => (
+                        {Sherlock_cont.tabs.map((tabName, index) => (
                             <React.Fragment key={index}>
                                 <div
                                     className={`tab-item ${activeTab === tabName ? 'active' : ''}`}
@@ -155,11 +155,11 @@ const Description = () => {
 
             <div className="register-button-container">
                 <div className="arrow arrow-left" onClick={() => handleArrowClick('left')}>&#9664;</div>
-                <button className="register-button">{Description_content.registerButtonText}</button>
+                <button className="register-button">{Sherlock_cont.registerButtonText}</button>
                 <div className="arrow arrow-right" onClick={() => handleArrowClick('right')}>&#9654;</div>
             </div>
         </div>
     );
 };
 
-export default Description;
+export default Flash;
