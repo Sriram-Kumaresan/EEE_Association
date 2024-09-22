@@ -7,11 +7,15 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const app_main = express();
 app_main.use('/backend', createProxyMiddleware({
-  target: 'http://localhost:5002',
+  target: 'http://localhost:5003',
   changeOrigin: true,
   pathRewrite: {
-    '^/backend': '/api' 
-  }
+    '^/backend': '/api',
+  },
+  onError: (err, req, res) => {
+    console.error('Proxy error:', err);
+    res.status(500).send('Proxy encountered an error.');
+  },
 }));
 console.log("Proxy middleware configured for '/backend' requests.");
 
@@ -25,9 +29,7 @@ const corsOptions = {
   };
 app_main.use(cors(corsOptions))
 //--------------changes-----------------
-const port_main = 5002;
-
-// const app_utils_Routes = require('./utils_app/routes.js');
+const port_main = 5003;
 
 const app_main_Routes = require('./main_app/routes.js');
 

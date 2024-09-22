@@ -715,6 +715,60 @@ export const Scavenger_content = {
     tabs: ["Description", "Rules", "Rounds", "Schedule", "Contacts"],
     registerButtonText: "Register",
 };
+export const Unlock_cont = {
+    headerTitle: "UNLOCK THE CONTRAPTION: ",
+    descriptionTitle: "DESCRIPTION",
+    descriptionText: "Join us for an exciting and interactive event where participants will put their digital logic circuit knowledge to the test! In this event, you will solve major digital logic circuit questions and use your skills to unlock a device that holds the key to victory.  ",
+    
+    rules: {
+        title: "RULES",
+        content: [
+            "Rule one:Teams usually consist of maximum 2 members. ",
+            "Rule two:Each round will have a strict time limit. ",
+            // "Rule three: A Q&A session follows each presentation."
+        ],
+    },
+    
+    rounds: {
+        title: "ROUNDS",
+        content: [
+            {
+                title: "Round 1 ",
+                details: [
+                    "This will be a pen-and-paper round featuring questions related to digital logic. Participants with the highest scores will advance to Round 2."                  
+                    // "The first team to solve all the clues and find the hidden treasure wins the game. ",
+                    // "Each clue may include riddles, puzzles, or challenges to complete.",
+                    // "Teams must stay within designated boundaries while searching"
+                ]
+            },
+            {
+                title: " Round 2",
+                details: [
+                    "In this round, you will unlock each question one at a time. Once you find the answer, you’ll use it as a password to access the next question. The participant who unlocks the most questions and earns more points will be the winner. If you can't answer a question, we’ll provide the password for the next one, but your points will be reduced."
+                    // "Teams or individuals must fit all the pieces of a cardboard puzzle together to form an accurate image as quickly as possible. ",
+                    // "Each group is given the same cardboard puzzle with a basic shape.The first to complete the puzzle wins the round."
+                ]
+            }
+        ]
+    },
+    
+    schedule: {
+        title: "SCHEDULE",
+        content: [
+            // "Day 1: Inauguration at 10:00 AM.",
+            // "Day 2: Paper presentations and networking."
+        ]
+    },
+    
+    contactDetails: {
+        title: "CONTACT",
+        phones: ["VIVEKANANDHAN S :  97914 96021", "VICTORIA P : 63803 33820"],
+        emails: ["contact@innovationfair.com", "info@innovationfair.com"],
+    },
+    
+    tabs: ["Description", "Rules", "Rounds", "Schedule", "Contacts"],
+    registerButtonText: "Register",
+};
 export const Workshop_content = {
     headerTitle: "Electric Vehicles Workshop",
     registerButtonText: "Register Now",
