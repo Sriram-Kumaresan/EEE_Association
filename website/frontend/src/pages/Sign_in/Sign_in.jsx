@@ -17,11 +17,19 @@ const Sign_in = () => {
         <div className='signIn_form'>
           <div className='signIn_input_row'>
             <img src={usernameLogo} alt='username logo' className="username_logo" />
-            <input type="email" className='signIn_input ' placeholder='Yourname@gmail.com'/>
+            <input type="email" className='signIn_input ' placeholder='Em@il id'/>
           </div>
           <div className='signIn_input_row'>
             <img src={passwordLogo} alt="password logo" className='password_logo'/>
             <input type="password" className='signIn_input' placeholder='Password'/>
+          </div>
+        </div>
+        <div className='signIn_login_connection'>
+          <div className='signIn_to_login'>
+            <a href="./Registration">New User</a>
+          </div>
+          <div className='signIn_forget_password'>
+            <a href="/">Forget Password ?</a>
           </div>
         </div>
         <div className='signIn_button'>

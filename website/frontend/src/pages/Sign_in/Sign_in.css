@@ -75,7 +75,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 45px;
+    padding-top: 40px;
 }
 
 .signIn_btn{
@@ -97,14 +97,34 @@
 
 .username_logo{
     position: fixed;
-    top: 205px;
+    top: 200px;
     left: 40px;
 }
 
 .password_logo{
     position: fixed;
-    top: 268px;
+    top: 263px;
     left: 40px;
+}
+
+.signIn_login_connection{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+
+}
+
+.signIn_to_login a,.signIn_forget_password a{
+    text-decoration: none;
+    font-family: 'Lexend';
+    font-size: 18px;
+    color: #FFDEAC;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.signIn_to_login a:hover,.signIn_forget_password a:hover{
+    color: #FFAD32;
 }
 
 @media(max-width:1024px){
@@ -147,12 +167,16 @@
 
     .username_logo{
         height: 17px;
-        top: 187px;
+        top: 181px;
     }
 
     .password_logo{
         height: 17px;
-        top: 246px;
+        top: 240px;
+    }
+
+    .signIn_to_login a,.signIn_forget_password a{
+        font-size: 16px;
     }
 }
 
@@ -188,12 +212,12 @@
 
     .username_logo{
         height: 15px;
-        top: 167px;
+        top: 161px;
     }
 
     .password_logo{
         height: 15px;
-        top: 226px;
+        top: 220px;
     }
 
     .signIn_btn{
@@ -204,11 +228,16 @@
     .signIn_button{
         padding: 35px 0px 0px 5px;
     }
+
+    .signIn_to_login a,.signIn_forget_password a{
+        font-size: 14px;
+    }
 }
 
 @media(max-width:440px){
     .signIn{
         background-image: url('../../assets/signin_bg_mob_view2.webp');
+        opacity: 0.01px;
         position: fixed;
         display: flex;
         box-sizing: border-box;
@@ -227,5 +256,9 @@
 
     .signIn_heading{
         letter-spacing: 0.2em;
+    }
+
+    .signIn_button{
+        padding-top: 30px;
     }
 }
