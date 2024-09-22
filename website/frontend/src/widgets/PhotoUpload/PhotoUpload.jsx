@@ -3,7 +3,7 @@ import axios from 'axios';
 import './PhotoUpload.css';
 
 const PhotoUpload = () => {
-    const [files, setFiles] = useState([]);
+    const [ setFiles] = useState([]);
 
     const preventDefaults = (e) => {
         e.preventDefault();
