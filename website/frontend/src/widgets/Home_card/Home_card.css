@@ -7,6 +7,10 @@
     justify-content: center;
     align-items: center;
     margin: 30px 20px;
+    transition: transform 0.2s;
+}
+.home_card_shell:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
 }
 
 .home_card_link{

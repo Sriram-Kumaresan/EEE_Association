@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
-
+import { motion } from 'framer-motion';
 import logo from "../../asset/alconesy_nav_logo.png";
 import Home_card from "../../widgets/Home_card/Home_card";
 
@@ -8,6 +8,19 @@ import home_card_img_1 from '../../asset/home_card-1.png'
 import home_card_img_2 from '../../asset/home_card-2.png'
 import home_card_img_3 from '../../asset/home_card-3.png'
 import home_bottom_pic from '../../asset/home_bottom_pic.png'
+const cardVariants = {
+  hidden: { opacity: 0,y: 100, scale: 0.9 },
+  visible: { 
+    opacity: 1, 
+    y: 0,
+    transition: {
+      delay: 0.2, // Delay between animations
+      staggerChildren: 0.2, // Stagger the child elements (cards)
+      duration: 1, // Smooth entrance
+      ease: 'easeInOut',
+    },
+  },
+};
 
 const Home = () => {
   const [days, setDays] = useState(0);
@@ -114,9 +127,16 @@ const Home = () => {
       <div className="card_sec_holder">
         <div className="about_sec_heading">ALCONESY</div>
         <div className="cards_holder">
+        <motion.div
+      className="cards_holder"
+      initial="hidden"
+      animate="visible"
+      variants={cardVariants}
+    >
           <Home_card img={home_card_img_1} link="/events" text="EVENTS"/>
           <Home_card img={home_card_img_2} link="/workshop" text="WORKSHOP"/>
           <Home_card img={home_card_img_3} link="/accomodation" text="ACCOMODATION"/>
+          </motion.div>
         </div>
       </div>
 

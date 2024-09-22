@@ -157,6 +157,15 @@ const Scavenger = () => {
                 <button className="register-button">{Scavenger_content.registerButtonText}</button>
                 <div className="arrow arrow-right" onClick={() => handleArrowClick('right')}>&#9654;</div>
             </div>
+              {/* <div>
+            
+                <div className="workshop-registered-message">
+                    Registered
+                </div>
+          
+
+            <div className="workshop-after-register"></div>
+        </div> */}
         </div>
     );
 };
