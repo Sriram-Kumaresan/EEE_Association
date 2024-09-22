@@ -13,13 +13,13 @@ const Events = () => {
         image={secF1} 
         text="DIALUX" 
         subtext="- PHOTON KICKOFF"
-        targetUrl="/book"
+        targetUrl="/dialux"
       />
       <Event_sec_card 
         image={secF2} 
         text="ROBOFLUSS BALL" 
         subtext="-PHOTON KICKOFF"
-        targetUrl="/books"
+        targetUrl="/robo"
       />
      
     </div>

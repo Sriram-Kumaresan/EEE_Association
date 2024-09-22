@@ -39,15 +39,21 @@ const Description = () => {
                     </ul>
                 );
 
-            case 'Rounds':
-                return (
-                    <ul>
-                        {Description_content.rounds.content.map((round, index) => (
-                            <li key={index}>{round}</li>
-                        ))}
-                    </ul>
-                );
-
+                case 'Rounds':
+                    return (
+                        <div>
+                            {Description_content.rounds.content.map((round, index) => (
+                                <div key={index}>
+                                    <h3>{round.title}</h3>
+                                    <ul>
+                                        {round.details.map((detail, detailIndex) => (
+                                            <li key={detailIndex}>{detail}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            ))}
+                        </div>
+                    );
             case 'Schedule':
                 return (
                     <ul>

@@ -14,7 +14,7 @@ const Events = () => {
         image={secB1} 
         text="TYCOON RUMBLE" 
         subtext="-PROJECTOPOLY"
-        targetUrl="/book"
+        targetUrl="/tycoon"
       />
       <Event_sec_card 
         image={secB2} 
@@ -26,7 +26,7 @@ const Events = () => {
         image={secB3} 
         text="SNACKS AND LADDERS" 
         subtext="-PROJECTOPOLY"
-        targetUrl="/books"
+        targetUrl="/snakes"
       />
      
     </div>

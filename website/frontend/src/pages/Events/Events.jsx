@@ -13,12 +13,12 @@ const Events = () => {
     <div className="full-page-bg">
       <div className="event_heading">E V E N T S</div>
       <div className="event_cards">
-        <Event_card1 image={secA} text="PAPER PURSUIT" targetUrl="/events_paper_p" />
-        <Event_card1 image={secB} text="PROJECTOPOLY" targetUrl="/events_Project" />
-        <Event_card1 image={secC} text="FRAME FLIX" targetUrl="/events_Frame" />
-        <Event_card1 image={secD} text="TREASUREC LOGIC" targetUrl="/events_Treasure" />
-        <Event_card1 image={secE} text="CIRCUIT CHARADES" targetUrl="/events_Circuit" />
-        <Event_card1 image={secF} text="PHOTON KICKOFF" targetUrl="/events_photon" />
+        <Event_card1 image={secA} text="PAPER PURSUIT" targetUrl="/paperpursuit" />
+        <Event_card1 image={secB} text="PROJECTOPOLY" targetUrl="/projectopoly" />
+        <Event_card1 image={secC} text="FRAME FLIX" targetUrl="/frameflix" />
+        <Event_card1 image={secD} text="TREASUREC LOGIC" targetUrl="/treasurelogic" />
+        <Event_card1 image={secE} text="CIRCUIT CHARADES" targetUrl="/circuitcharades" />
+        <Event_card1 image={secF} text="PHOTON KICKOFF" targetUrl="/photonkickoff" />
       </div>
     </div>
   );

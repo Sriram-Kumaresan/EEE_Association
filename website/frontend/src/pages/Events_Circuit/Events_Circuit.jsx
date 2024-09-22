@@ -19,7 +19,7 @@ const Events = () => {
         image={secE2} 
         text="FLASHGLEE" 
         subtext="- CIRCUIT CHARADES"
-        targetUrl="/books"
+        targetUrl="/flash"
       />
      
     </div>
