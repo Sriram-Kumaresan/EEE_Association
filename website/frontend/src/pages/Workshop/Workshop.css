@@ -12,6 +12,7 @@
     display: inline-block;  
 }
 
+
 ul {
     list-style-type: disc;
     margin-left: 20px;
@@ -92,6 +93,14 @@ li {
     text-align: justify;
     margin-bottom: 40px;
     font-family: Lexend;
+    max-height: 400px;
+    max-height: 300px; /* Adjust this height as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+    scrollbar-color: #f8d000 rgba(255, 255, 255, 0.1); /* Yellow scrollbar */
+    scrollbar-width: thin;
+    padding-right: 10px;
+    /* overflow-y: scroll; */
+    
     /* flex-grow: 1; */
 }
 .workshop-image {
@@ -186,7 +195,10 @@ li {
     margin-top: 20px;
     position: relative;
     width: 100%;
+   
 }
+
+
 
 /* Expand content when active */
 .workshop-tab-content.active {
@@ -234,6 +246,24 @@ li {
 .workshop-register-button:hover {
     transform: translateY(-2px); 
     box-shadow: 0 6px 40px rgba(0, 0, 0, 0.2); 
+}
+.description-box::-webkit-scrollbar {
+    width: 8px;
+}
+
+.description-box::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.description-box::-webkit-scrollbar-thumb {
+    background-color: #f8d000;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+
+.description-box::-webkit-scrollbar-thumb{
+    background-color: #ffc300;
+    border: 2px solid transparent;
 }
 
 @media (max-width: 900px) {
@@ -295,6 +325,7 @@ li {
     }
     .workshop-heading{
         width:80%;
+        padding-bottom: 60px;
         
     }
     .workshop-heading-img{
@@ -337,6 +368,7 @@ li {
         position: relative;
         margin: 0 auto; 
         z-index: 1;
+        height: 380px;
     }
 
     .workshop-description-text {
@@ -346,10 +378,19 @@ li {
         scrollbar-width: thin;
         font-size: 16px;
         padding-right: 15px;
+        /* padding-top: 20px; */
 
+    }
+    .workshop-description-header{
+        margin: 0px;
+        /* padding: 0px; */
     }
     .workshop-event-title{
         font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .workshop-description-header{
+        padding-bottom: 20px;
     }
  
 } 

@@ -94,7 +94,7 @@ export const Flash_cont = {
     
     contactDetails: {
         title: "CONTACT",
-        phones: ["+91 9999999999", "+91 8888888888"],
+        phones: ["VIVEKANANDHAN S :  97914 96021", "VICTORIA P : 63803 33820"],
         emails: ["contact@innovationfair.com", "info@innovationfair.com"],
     },
     
@@ -178,7 +178,7 @@ export const Colloquium_content = {
                 title: "Round 1",
                 details: [
                     "First round is online mode.  ",
-                    "You have to submit your thesis through mail.",
+                    "Participants should submit their abstract via email to 'paperpresentation.alconesy@gmail.com.' ",
                     "Participants will be shortlisted and those will present their paper in second round."
                 ]
             },
@@ -186,7 +186,15 @@ export const Colloquium_content = {
                 title: "Round 2",
                 details: [
                     "Participants shortlisted from first round have to present their paper in front of judges and students.",
-                    "Try to convey your thoughts within 7 minutes.",
+                    " Take 7 minutes to convey your ideas, and participants will be questioned for 3 minutes.",
+                    // "There will be negative mark for wrong answers ."
+                ]
+            },
+            {
+                title: "MARK ALLOCATION",
+                details: [
+                    "Mark allocation is completely based on communication, topic , content , novelty and everything is noted . ",
+                    // " Take 7 minutes to convey your ideas, and participants will be questioned for 3 minutes.",
                     // "There will be negative mark for wrong answers ."
                 ]
             }
@@ -677,7 +685,13 @@ export const Workshop_content = {
     prerequisites: {
         title: "Prerequisites",
         content: [
-            "Laptop with Tinkercad software installed."
+            "Laptop with Tinkercad software installed.",
+            "A laptop is required for participation. ",
+            "Ensure all necessary software is installed prior to the session",
+            "A kit for the practical session will be provided.",
+            "Participants who are registered for workshop will not be able to attend the events on second day (October 23)",
+            "Certificates will be awarded only to those who attend the full session.",
+            "Participants are expected to arrive promptly and remain for the entire duration of the workshop."
         ]
     },
 
