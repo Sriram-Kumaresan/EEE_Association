@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 
 import {Navbar, Footer} from './Components'
-import {Events,Events_secB,Events_secC,Events_secD,Events_secE,Home,Contact,Workshop, Colloquium,Cine, Dialux, Description, Flash,Meta,Projectexpo,Robo,Sherlock,Snakes,Tycoon,Error} from './pages'
+import {Events,Events_secB,Events_secC,Events_secD,Events_secE,Home,Contact,Workshop, Colloquium,Cine, Dialux, Description, Flash,Meta,Projectexpo,Robo,Sherlock,Snakes,Tycoon,Error,Scavenjer,Unlock} from './pages'
 import {Events_Project,Events_Frame,Events_Treasure,Events_Circuit,Events_photon} from './pages'
 
 
@@ -46,6 +46,8 @@ const App = () => {
         <Route path="/sherlock" element={<Sherlock />} />
        <Route path="/snakes" element={<Snakes />} />
         <Route path="/tycoon" element={<Tycoon />} />
+        <Route path="/scavenjer" element={<Scavenjer />} />
+        <Route path="/unlock" element={<Unlock />} />
         {/* <Route path="/Events_secA" element={<Events_secA />} /> */}
 
        

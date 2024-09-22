@@ -1,39 +1,19 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+// import { useNavigate } from 'react-router-dom'; 
 import './Workshop.css';
 import workshopImage from '../../asset/workshop_bot-4.png';
 import workshopname from '../../asset/workshop-name.png';
 import { Workshop_content } from "../../constants/description";
 
 const Workshop = () => {
-    const navigate = useNavigate(); // Initialize useNavigate
+    // const navigate = useNavigate();
     const [activeTab, setActiveTab] = useState(Workshop_content.tabs[0]);
     const [touchStart, setTouchStart] = useState(0);
     const [touchEnd, setTouchEnd] = useState(0);
-
     const handleTabClick = (tabName) => {
         setActiveTab(tabName);
-        // Redirect based on the tab clicked
-        switch (tabName) {
-            case 'Description':
-                navigate('/description'); // Replace with the correct path
-                break;
-            case 'Schedule':
-                navigate('/schedule'); // Replace with the correct path
-                break;
-            case 'Prerequisites':
-                navigate('/prerequisites'); // Replace with the correct path
-                break;
-            case 'Speaker':
-                navigate('/speaker'); // Replace with the correct path
-                break;
-            case 'Takeaways':
-                navigate('/takeaways'); // Replace with the correct path
-                break;
-            default:
-                break;
-        }
     };
+    
 
     const handleArrowClick = (direction) => {
         const currentIndex = Workshop_content.tabs.indexOf(activeTab);
@@ -147,13 +127,15 @@ const Workshop = () => {
                 <div className="workshop-tab-menu-container">
                     <div className="workshop-tab-menu">
                         {Workshop_content.tabs.map((tabName, index) => (
+                             <React.Fragment key={index}>
                             <div
-                                key={index}
+                                
                                 className={`workshop-tab-item ${activeTab === tabName ? 'active' : ''}`}
                                 onClick={() => handleTabClick(tabName)}
                             >
                                 <span>{tabName}</span>
                             </div>
+                            </React.Fragment>
                         ))}
                     </div>
                 </div>

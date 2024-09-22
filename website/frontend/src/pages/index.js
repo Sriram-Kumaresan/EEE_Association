@@ -21,6 +21,10 @@ export {default as Sherlock} from './Description/Sherlock';
 export {default as Snakes} from './Description/Snakes';
 export {default as Tycoon} from './Description/Tycoon';
 export {default as Error} from './Description/Error';
+export {default as Scavenjer} from './Description/Scavenjer';
+export {default as Unlock} from './Description/unlock';
+
+
 
 export {default as Workshop} from './Workshop/Workshop';
 

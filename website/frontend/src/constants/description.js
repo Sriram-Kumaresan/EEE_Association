@@ -94,7 +94,7 @@ export const Flash_cont = {
     
     contactDetails: {
         title: "CONTACT",
-        phones: ["+91 9999999999", "+91 8888888888"],
+        phones: ["VIVEKANANDHAN S :  97914 96021", "VICTORIA P : 63803 33820"],
         emails: ["contact@innovationfair.com", "info@innovationfair.com"],
     },
     
@@ -178,7 +178,7 @@ export const Colloquium_content = {
                 title: "Round 1",
                 details: [
                     "First round is online mode.  ",
-                    "You have to submit your thesis through mail.",
+                    "Participants should submit their abstract via email to 'paperpresentation.alconesy@gmail.com.' ",
                     "Participants will be shortlisted and those will present their paper in second round."
                 ]
             },
@@ -186,7 +186,15 @@ export const Colloquium_content = {
                 title: "Round 2",
                 details: [
                     "Participants shortlisted from first round have to present their paper in front of judges and students.",
-                    "Try to convey your thoughts within 7 minutes.",
+                    " Take 7 minutes to convey your ideas, and participants will be questioned for 3 minutes.",
+                    // "There will be negative mark for wrong answers ."
+                ]
+            },
+            {
+                title: "MARK ALLOCATION",
+                details: [
+                    "Mark allocation is completely based on communication, topic , content , novelty and everything is noted . ",
+                    // " Take 7 minutes to convey your ideas, and participants will be questioned for 3 minutes.",
                     // "There will be negative mark for wrong answers ."
                 ]
             }
@@ -653,7 +661,114 @@ export const Error_cont = {
     tabs: ["Description", "Rules", "Rounds", "Schedule", "Contacts"],
     registerButtonText: "Register",
 };
-
+export const Scavenger_content = {
+    headerTitle: "Scavenger Hunt ",
+    descriptionTitle: "DESCRIPTION",
+    descriptionText: " Join us for an exhilarating adventure that will ignite your sense of excitement! Navigate through clues, solve intriguing puzzles, and uncover hidden secrets across campus. Gather your team and race against the clock to be the first to discover the ultimate prize. Will you crack the code and claim victory?   ",
+    
+    rules: {
+        title: "RULES",
+        content: [
+            "Rule one:Teams usually consist of maximum 2 members. ",
+            "Rule two:Each round will have a strict time limit. ",
+            // "Rule three: A Q&A session follows each presentation."
+        ],
+    },
+    
+    rounds: {
+        title: "ROUNDS",
+        content: [
+            {
+                title: "Round ",
+                details: [
+                    " Teams work together to decode a series of clues. ",
+                    "Clues lead them to different locations around the area. ",
+                    "The first team to solve all the clues and find the hidden treasure wins the game. ",
+                    "Each clue may include riddles, puzzles, or challenges to complete.",
+                    "Teams must stay within designated boundaries while searching"
+                ]
+            },
+            {
+                title: " ",
+                details: [
+                    // "Teams or individuals must fit all the pieces of a cardboard puzzle together to form an accurate image as quickly as possible. ",
+                    // "Each group is given the same cardboard puzzle with a basic shape.The first to complete the puzzle wins the round."
+                ]
+            }
+        ]
+    },
+    
+    schedule: {
+        title: "SCHEDULE",
+        content: [
+            "Day 1: Inauguration at 10:00 AM.",
+            "Day 2: Paper presentations and networking."
+        ]
+    },
+    
+    contactDetails: {
+        title: "CONTACT",
+        phones: ["VIVEKANANDHAN S :  97914 96021", "VICTORIA P : 63803 33820"],
+        emails: ["contact@innovationfair.com", "info@innovationfair.com"],
+    },
+    
+    tabs: ["Description", "Rules", "Rounds", "Schedule", "Contacts"],
+    registerButtonText: "Register",
+};
+export const Unlock_cont = {
+    headerTitle: "UNLOCK THE CONTRAPTION: ",
+    descriptionTitle: "DESCRIPTION",
+    descriptionText: "Join us for an exciting and interactive event where participants will put their digital logic circuit knowledge to the test! In this event, you will solve major digital logic circuit questions and use your skills to unlock a device that holds the key to victory.  ",
+    
+    rules: {
+        title: "RULES",
+        content: [
+            "Rule one:Teams usually consist of maximum 2 members. ",
+            "Rule two:Each round will have a strict time limit. ",
+            // "Rule three: A Q&A session follows each presentation."
+        ],
+    },
+    
+    rounds: {
+        title: "ROUNDS",
+        content: [
+            {
+                title: "Round 1 ",
+                details: [
+                    "This will be a pen-and-paper round featuring questions related to digital logic. Participants with the highest scores will advance to Round 2."                  
+                    // "The first team to solve all the clues and find the hidden treasure wins the game. ",
+                    // "Each clue may include riddles, puzzles, or challenges to complete.",
+                    // "Teams must stay within designated boundaries while searching"
+                ]
+            },
+            {
+                title: " Round 2",
+                details: [
+                    "In this round, you will unlock each question one at a time. Once you find the answer, you’ll use it as a password to access the next question. The participant who unlocks the most questions and earns more points will be the winner. If you can't answer a question, we’ll provide the password for the next one, but your points will be reduced."
+                    // "Teams or individuals must fit all the pieces of a cardboard puzzle together to form an accurate image as quickly as possible. ",
+                    // "Each group is given the same cardboard puzzle with a basic shape.The first to complete the puzzle wins the round."
+                ]
+            }
+        ]
+    },
+    
+    schedule: {
+        title: "SCHEDULE",
+        content: [
+            // "Day 1: Inauguration at 10:00 AM.",
+            // "Day 2: Paper presentations and networking."
+        ]
+    },
+    
+    contactDetails: {
+        title: "CONTACT",
+        phones: ["VIVEKANANDHAN S :  97914 96021", "VICTORIA P : 63803 33820"],
+        emails: ["contact@innovationfair.com", "info@innovationfair.com"],
+    },
+    
+    tabs: ["Description", "Rules", "Rounds", "Schedule", "Contacts"],
+    registerButtonText: "Register",
+};
 export const Workshop_content = {
     headerTitle: "Electric Vehicles Workshop",
     registerButtonText: "Register Now",
@@ -677,7 +792,13 @@ export const Workshop_content = {
     prerequisites: {
         title: "Prerequisites",
         content: [
-            "Laptop with Tinkercad software installed."
+            "Laptop with Tinkercad software installed.",
+            "A laptop is required for participation. ",
+            "Ensure all necessary software is installed prior to the session",
+            "A kit for the practical session will be provided.",
+            "Participants who are registered for workshop will not be able to attend the events on second day (October 23)",
+            "Certificates will be awarded only to those who attend the full session.",
+            "Participants are expected to arrive promptly and remain for the entire duration of the workshop."
         ]
     },
 

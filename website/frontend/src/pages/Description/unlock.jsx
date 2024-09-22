@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './Description.css';
-import { Dialux_content } from "../../constants/description";
+import { Unlock_cont } from "../../constants/description";
 
-const Dialux = () => {
-    const [activeTab, setActiveTab] = useState(Dialux_content.tabs[0]);
+const Unlock = () => {
+    const [activeTab, setActiveTab] = useState(Unlock_cont.tabs[0]);
     const [touchStart, setTouchStart] = useState(0);
     const [touchEnd, setTouchEnd] = useState(0);
 
@@ -12,27 +12,27 @@ const Dialux = () => {
     };
 
     const handleArrowClick = (direction) => {
-        const currentIndex = Dialux_content.tabs.indexOf(activeTab);
+        const currentIndex = Unlock_cont.tabs.indexOf(activeTab);
         let newIndex;
 
         if (direction === 'left') {
-            newIndex = (currentIndex - 1 + Dialux_content.tabs.length) % Dialux_content.tabs.length;
+            newIndex = (currentIndex - 1 + Unlock_cont.tabs.length) % Unlock_cont.tabs.length;
         } else {
-            newIndex = (currentIndex + 1) % Dialux_content.tabs.length;
+            newIndex = (currentIndex + 1) % Unlock_cont.tabs.length;
         }
 
-        setActiveTab(Dialux_content.tabs[newIndex]);
+        setActiveTab(Unlock_cont.tabs[newIndex]);
     };
 
     const getTabContent = () => {
         switch (activeTab) {
             case 'Description':
-                return Dialux_content.descriptionText;
+                return Unlock_cont.descriptionText;
 
             case 'Rules':
                 return (
                     <ul>
-                        {Dialux_content.rules.content.map((rule, index) => (
+                        {Unlock_cont.rules.content.map((rule, index) => (
                             <li key={index}>{rule}</li>
                         ))}
                     </ul>
@@ -41,7 +41,7 @@ const Dialux = () => {
             case 'Rounds':
                 return (
                     <div>
-                        {Dialux_content.rounds.content.map((round, index) => (
+                        {Unlock_cont.rounds.content.map((round, index) => (
                             <div key={index}>
                                 <h3>{round.title}</h3>
                                 <ul>
@@ -53,10 +53,11 @@ const Dialux = () => {
                         ))}
                     </div>
                 );
+
             case 'Schedule':
                 return (
                     <ul>
-                        {Dialux_content.schedule.content.map((item, index) => (
+                        {Unlock_cont.schedule.content.map((item, index) => (
                             <li key={index}>{item}</li>
                         ))}
                     </ul>
@@ -67,13 +68,13 @@ const Dialux = () => {
                     <div>
                         <p>Phones:</p>
                         <ul>
-                            {Dialux_content.contactDetails.phones.map((phone, index) => (
+                            {Unlock_cont.contactDetails.phones.map((phone, index) => (
                                 <li key={index}>{phone}</li>
                             ))}
                         </ul>
                         <p>Emails:</p>
                         <ul>
-                            {Dialux_content.contactDetails.emails.map((email, index) => (
+                            {Unlock_cont.contactDetails.emails.map((email, index) => (
                                 <li key={index}>{email}</li>
                             ))}
                         </ul>
@@ -81,7 +82,7 @@ const Dialux = () => {
                 );
 
             default:
-                return Dialux_content.descriptionText;
+                return Unlock_cont.descriptionText;
         }
     };
 
@@ -129,8 +130,8 @@ const Dialux = () => {
     return (
         <div className="page-background">
             <div className="description-box">
-                <h1 className="event-title">{Dialux_content.headerTitle}</h1>
-                <h2 className="description-header">{Dialux_content[activeTab.toLowerCase()]?.title || 'DESCRIPTION'}</h2>
+                <h1 className="event-title">{Unlock_cont.headerTitle}</h1>
+                <h2 className="description-header">{Unlock_cont[activeTab.toLowerCase()]?.title || 'DESCRIPTION'}</h2>
 
                 <p className="description-text">
                     {getTabContent()}
@@ -138,7 +139,7 @@ const Dialux = () => {
 
                 <div className="tab-menu-container">
                     <div className="tab-menu">
-                        {Dialux_content.tabs.map((tabName, index) => (
+                        {Unlock_cont.tabs.map((tabName, index) => (
                             <React.Fragment key={index}>
                                 <div
                                     className={`tab-item ${activeTab === tabName ? 'active' : ''}`}
@@ -154,7 +155,7 @@ const Dialux = () => {
 
             <div className="register-button-container">
                 <div className="arrow arrow-left" onClick={() => handleArrowClick('left')}>&#9664;</div>
-                <button className="register-button">{Dialux_content.registerButtonText}</button>
+                <button className="register-button">{Unlock_cont.registerButtonText}</button>
                 <div className="arrow arrow-right" onClick={() => handleArrowClick('right')}>&#9654;</div>
             </div>
               {/* <div>
@@ -170,4 +171,4 @@ const Dialux = () => {
     );
 };
 
-export default Dialux;
+export default Unlock;
