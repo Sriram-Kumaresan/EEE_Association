@@ -661,7 +661,60 @@ export const Error_cont = {
     tabs: ["Description", "Rules", "Rounds", "Schedule", "Contacts"],
     registerButtonText: "Register",
 };
-
+export const Scavenger_content = {
+    headerTitle: "Scavenger Hunt ",
+    descriptionTitle: "DESCRIPTION",
+    descriptionText: " Join us for an exhilarating adventure that will ignite your sense of excitement! Navigate through clues, solve intriguing puzzles, and uncover hidden secrets across campus. Gather your team and race against the clock to be the first to discover the ultimate prize. Will you crack the code and claim victory?   ",
+    
+    rules: {
+        title: "RULES",
+        content: [
+            "Rule one:Teams usually consist of maximum 2 members. ",
+            "Rule two:Each round will have a strict time limit. ",
+            // "Rule three: A Q&A session follows each presentation."
+        ],
+    },
+    
+    rounds: {
+        title: "ROUNDS",
+        content: [
+            {
+                title: "Round ",
+                details: [
+                    " Teams work together to decode a series of clues. ",
+                    "Clues lead them to different locations around the area. ",
+                    "The first team to solve all the clues and find the hidden treasure wins the game. ",
+                    "Each clue may include riddles, puzzles, or challenges to complete.",
+                    "Teams must stay within designated boundaries while searching"
+                ]
+            },
+            {
+                title: " ",
+                details: [
+                    // "Teams or individuals must fit all the pieces of a cardboard puzzle together to form an accurate image as quickly as possible. ",
+                    // "Each group is given the same cardboard puzzle with a basic shape.The first to complete the puzzle wins the round."
+                ]
+            }
+        ]
+    },
+    
+    schedule: {
+        title: "SCHEDULE",
+        content: [
+            "Day 1: Inauguration at 10:00 AM.",
+            "Day 2: Paper presentations and networking."
+        ]
+    },
+    
+    contactDetails: {
+        title: "CONTACT",
+        phones: ["VIVEKANANDHAN S :  97914 96021", "VICTORIA P : 63803 33820"],
+        emails: ["contact@innovationfair.com", "info@innovationfair.com"],
+    },
+    
+    tabs: ["Description", "Rules", "Rounds", "Schedule", "Contacts"],
+    registerButtonText: "Register",
+};
 export const Workshop_content = {
     headerTitle: "Electric Vehicles Workshop",
     registerButtonText: "Register Now",
