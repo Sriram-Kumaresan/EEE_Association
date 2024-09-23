@@ -1,11 +1,49 @@
 .Eee__teams-main{
-    /* background-image: url('../../asset/team.webp'); */
+    background-image: url('../../asset/team.webp');
     background-size: cover;
     background-repeat: no-repeat; 
     min-height: 100vh;
     width: 100%;  
     padding: 30px 65px;
 }
+.Eee__teams-heading{
+    margin: 20px 0px;
 
+}
+.Eee__teams-card-container{
+    display: flex;
+    justify-content:center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+@media (max-width:770px){
+    .Eee__teams-main{
+        padding: 30px 15px;
+    }
+    .Eee__teams-card-container{
+        gap:30px
 
+    }
+
+}
+
+@media (max-width:460px) {
+    .Eee__teams-hd-img{
+        width: 50%;
+        height: 50%;
+
+    }
+
+    .Eee__teams-heading{
+        margin: 20px 15px;
+    }
+    .Eee__teams-main{
+        padding: 6px;
+    }
+   
+    
+
+    
+}
 

@@ -7,9 +7,13 @@
   width: 100%;
 
 }
+/* .Eee__pay-main:focus{
+  border: none;
+} */
 
 .Eee__pay_inst-delt {
   display: flex;
+  gap: 90px;
   /* flex-direction: column; */
 }
 
@@ -89,8 +93,92 @@
   width: 70px;
   height: 70px;
 }
+.Eee__pay-inst-form-p
+{
+  color: #FFFFFF;
+  font-family: 'Lexend', sans-serif;
+  font-size: 14px;
+  padding: 2px 12px;
+  margin: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  font-synthesis-weight: 400;
+}
+
+input::placeholder{
+  color:white
+}
+
+.Eee__gpay-p{
+  display: flex;
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  font-synthesis-weight: 400;
+  padding: 13px ;
+  letter-spacing: 4px;
+  margin: 14px 0px;
+  width: 100%;
+
+}
+
+.Eee__pay-select-main{
+margin-bottom: 20px;
+}
+.Eee__pay-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.Eee__pay-checkbox-full{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.Eee__pay-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 42px;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px; 
+  background-color:none; 
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 12px;
+  margin-left: 4px;
+}
+
+.pay__full-checkbox{
+  width: 100%;
+}
+
+.full-checkbox{
+  background: none;
+  border: none;
+  width: 100%;
+}
+
+
+.Eee__pay-checkbox.checked {
+  /* background: rgba(255, 173, 50, 0.2);
+  color: #FFDEAC; */
+  color: white;
+  background-color: #FFAD3261;
+  border: 1px solid #FEE356;
+  border-radius: 5px;
+}
+
 
 .Eee__pay-inst-form-inp {
+
   width: 84%;
   padding: 13.5px;
   margin: 13px;
@@ -107,7 +195,7 @@
   border-radius: 5px;
 }
 
-.Eee__pay-det-inp-half {
+.Eee__pay-det-inp-half  {
   width: 40%;
   padding: 13.5px;
   margin: 13px;
@@ -116,6 +204,7 @@
   border-radius: 5px;
 }
 
+
 .Eee__pay-det-gpay {
   display: flex;
   margin-top: 50px;
@@ -123,7 +212,10 @@
 
 .Eee__gpay_qr_container {
   display: flex;
-  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin-top: 40px;
 }
 
 .Eee__gpay-svg {
@@ -137,9 +229,10 @@
 color: #FFFFFF;
 }
 
-.Eee__gpay-aside-inp {
+/* .Eee__gpay-aside-inp {
+
   margin: 8px;
-}
+} */
 
 .Eee__pay-alconesy {
   display: flex;
@@ -187,6 +280,22 @@ color: #FFFFFF;
 .pay__cloud_img {
   margin-left: 5px;
 }
+.Eee__pay__transistion-holder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.Eee__pay-inst-inp{
+  width: 28%;
+  color: #FFFFFF;
+  padding: 10px;
+  margin:  30px 2px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+
+}
 
 .Eee__pay-sbt-button{
   padding:   15px 75px ;
@@ -202,7 +311,7 @@ color: #FFFFFF;
 }
 
 /* Media Query for Devices with max-width 1200px */
-@media (max-width: 1200px) {
+@media (max-width: 980px) {
   .Eee__pay-inst-delt {
     flex-direction: column;
     align-items: center;
@@ -226,6 +335,11 @@ color: #FFFFFF;
   .Eee__pay-det-hd {
     margin: 30px 20px;
     font-size: 18px;
+  }
+  .Eee__pay_inst-delt {
+    display: flex;
+    gap: 0;
+    /* flex-direction: column; */
   }
 
   .Eee__pay-icon-holder {
@@ -306,7 +420,8 @@ color: #FFFFFF;
   }
   .Eee__gpay_qr_container{
     display: flex;
-    flex-direction: column;
+    gap: 30px;
+    /* flex-direction: column; */
   }
 
   .Eee__gpay-aside-inp{
@@ -347,9 +462,29 @@ color: #FFFFFF;
     font-size: 8px;
   }
 }
+@media (max-width:780px){
+  .Eee__pay_inst-delt{
+    display: flex;
+    flex-direction: column;
 
-/* Media Query for Devices with max-width 480px */
-@media (max-width: 560px) {
+  }
+  .Eee__pay-inst-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ 
+  }
+  .Eee__pay-inst-form-p{
+    margin: 6px 0;
+    width: 60%;
+  }
+
+
+
+}
+
+@media (max-width: 550px) {
   .Eee__pay-main{
     padding: 8px 18px 12px 30px;
 
@@ -377,6 +512,10 @@ color: #FFFFFF;
    }
    .Eee__pay-det{
     margin: 8px;
+   }
+
+    .Eee__gpay-aside-inp{
+      margin: 0;
    }
 
   .Eee__pay-inst-hd,
@@ -417,6 +556,13 @@ color: #FFFFFF;
     display: flex;
     flex-direction: column;
   }
+  .Eee__pay-inst-form-p{
+
+    width: 100%;
+    margin: 6px 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
 
   .Eee__pay-aloconesy-svg{
    display: none; 
@@ -449,4 +595,14 @@ color: #FFFFFF;
   .pay__cloud-p-small {
     font-size: 8px;
   }
+  .Eee__pay-inst-inp{
+    width: 60%;
+    padding: 10px;
+    margin:  30px 2px 0px 2px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+  
+  }
+  
 }
