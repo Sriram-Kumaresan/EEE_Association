@@ -14,6 +14,10 @@
 }
 .team__card-img-holder{
     margin: 16px;
+
+}
+.team__card-img{
+    border-radius: 16px;
 }
 .team__card-img,
 .tm__dest-img{
@@ -92,13 +96,5 @@
         width:120px ;
         height: 120px;
     } */
-    .Eee__teams-card-container{
-        /* gap: 1px; */
-        /* margin: 10px; */
-    }
- 
-     /* .team__card-img{
-        width: 100%;
-        height: auto;
-    }  */
+
 }

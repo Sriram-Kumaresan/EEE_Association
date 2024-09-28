@@ -55,14 +55,8 @@
     /* position: fixed; */
   }
   .modal__button{
-    /* margin-top: 5px;
-    color: white;
-    font-size: 14px;
-    padding: 12px;
-    background-color: darkblue;
-    border: 1px solid black;
-    border-radius: 5px; */
 
+    font-family: 'Lexend', sans-serif;
     padding:  12px 25px;
     color: white;
     background-color: #FFAD3261;
