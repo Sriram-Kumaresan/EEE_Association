@@ -1,0 +1,447 @@
+.home_top_order_container{
+    background: url("../../asset/home_bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 15px;
+    height: fit-content;
+    min-height: 100vh;
+    width: 100%;
+}
+.home_card_shell {
+    width: 300px;
+    height: 400px;
+    background-color: #281A0E;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Add shadow */
+    transition: transform 0.2s, box-shadow 0.3s ease-in-out; 
+  }
+  /* .home_card_shell:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); 
+  } */
+.home_top_holder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home_logo_holder{
+    width: 10%;
+    min-width: 100px;
+}
+
+.home_logo_img{
+    width: 100%;
+    height: auto;
+}
+
+.home_top_login_holder{
+    text-decoration: none;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.home_top_login_holder:hover{
+    border-bottom: 2px solid #ffecbc;
+    transition: 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.home_top_login_text{
+    font-family: "Azonix";
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 5px;
+    text-align: center;
+    text-shadow: 0 4px 4px black ;
+    color: #fff;
+}
+
+.home_hero_sec_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home_hero_sec_clg_name{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Azonix";
+    color: #fff;
+    letter-spacing: 5px;
+    text-align: center;
+    text-shadow: 0 4px 4px black ;
+    margin-bottom: 20px;
+}
+
+.home_hero_sec_sup_title{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Azonix";
+    color: #fff;
+    letter-spacing: 5px;
+    text-align: center;
+    text-shadow: 0 4px 4px black ;
+}
+
+.home_hero_sec_heading{
+    font-size: 64px;
+    font-weight: 400;
+    font-family: "Azonix";
+    color: #fff;
+    letter-spacing: 25px;
+    padding-left: 25px;
+    text-align: center;
+    text-shadow: 0 4px 4px black ;
+    margin: 30px 0;
+}
+
+.home_hero_sec_date{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Azonix";
+    color: #fff;
+    letter-spacing: 5px;
+    text-align: center;
+    text-shadow: 0 4px 4px black ;
+}
+
+.home_counter_sec_container{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.home_counter_slot_holder{
+    display: flex;
+    width: 164px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 50px;
+}
+
+.slot_holder_1,.slot_holder_2{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.home_counter_number_slot{
+    aspect-ratio: 1;
+    width: 124px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .4);
+    border: 3px solid #fff;
+    /* border: 3px solid #ffecbc; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:
+  0px 0px 7.1px rgba(255, 236, 188, 0.27),
+  0px 0px 17px rgba(255, 236, 188, 0.388),
+  0px 0px 31.9px rgba(255, 236, 188, 0.48),
+  0px 0px 57px rgba(255, 236, 188, 0.572),
+  0px 0px 106.5px rgba(255, 236, 188, 0.69),
+  0px 0px 255px rgba(255, 236, 188, 0.96)
+;
+}
+
+.home_counter_number{
+    font-size: 40px;
+    font-weight: 400;
+    font-family: "Azonix";
+    color: #fff;
+    letter-spacing: 5px;
+    text-align: center;
+    text-shadow: 0 4px 4px black ;
+    line-height: 100%;
+    padding-left: 5px;
+}
+
+.home_counter_text{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Azonix";
+    color: #fff;
+    letter-spacing: 7px;
+    text-align: center;
+    text-shadow: 0 4px 4px black ;
+    line-height: 100%;
+    padding-left: 7px;
+    margin-top: 20px;
+}
+
+.home_hero_quote{
+    font-size: 20px;
+    font-weight: 100;
+    font-family: "Lexend";
+    color: #fff;
+    letter-spacing: 5px;
+    text-align: center;
+    /* text-shadow: 0 4px 4px black ; */
+    margin-top: 100px;
+}
+
+.about_whole_single_container{
+    /* padding: 20px; */
+    background: rgb(23,14,10);
+    background: linear-gradient(180deg, rgba(23,14,10,1) 8%, rgba(111,73,37,1) 51%, rgba(140,90,28,1) 100%);
+}
+
+.about_sec_holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about_sec_heading{
+    font-family: "Azonix";
+    color: #fff;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 15px;
+    padding-left: 15px;
+    text-shadow: 0 4px 4px black ;
+}
+
+.about_sec_text{
+    font-family: "Lexend";
+    color: #fff;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 38px;
+    text-align: center;
+    margin: 20px 50px;
+    width: 80%;
+    letter-spacing: 2px;
+}
+
+.card_sec_holder{
+    margin-top: 100px;
+}
+.cards_holder{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 75px;
+    gap: 30px;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.home_bottom_pic_holder{
+    width: 100%;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_bottom_pic{
+    width: 100%;
+    height: auto;
+}
+
+@media(max-width:1160px){
+    .home_counter_slot_holder{
+        margin: 0 40px;
+    }
+}
+
+@media(max-width:1010px){
+    .home_counter_slot_holder{
+        margin: 0 20px;
+    }
+    /* .home_counter_sec_container{
+        flex-direction: column;
+    } */
+}
+
+@media(max-width:850px){
+    .home_counter_number_slot{
+        width: 170px;
+    }
+
+    .home_counter_number{
+        font-size: 52px;
+    }
+
+    .home_counter_slot_holder{
+        margin: 0 50px;
+    }
+
+    .home_counter_text{
+        font-size: 28px;
+    }
+
+    .home_hero_sec_heading{
+        font-size: 56px;
+        letter-spacing: 20px;
+        padding-left: 20px;
+    }
+
+    .about_sec_heading{
+        font-size: 32px;
+        letter-spacing: 10px;
+        padding-left: 10px;
+    }
+}
+
+@media(max-width:710px){
+    .home_hero_sec_heading{
+        font-size: 48px;
+        letter-spacing: 20px;
+        padding-left: 20px;
+    }
+
+    .about_sec_heading{
+        font-size: 30px;
+    }
+
+    .about_sec_text{
+        font-size: 18px;
+    }
+    
+}
+
+@media(max-width:630px){
+    .home_counter_number_slot{
+        width: 150px;
+    }
+
+    .home_counter_number{
+        font-size: 44px;
+    }
+
+    .home_counter_text{
+        font-size: 20px;
+    }
+
+    .home_counter_slot_holder{
+        margin: 0 20px;
+    }
+
+    .home_top_order_container{
+        padding: 10px;
+    }
+    .home_top_login_text{
+        font-size: 20px;
+    }
+    .home_top_login_holder{
+        margin-right: 10px;
+        padding: 5px;
+    }
+
+    .home_hero_sec_heading{
+        font-size: 40px;
+    }
+
+    .about_sec_heading{
+        font-size: 28px;
+    }
+}
+/*mobile*/
+@media(max-width:530px){
+    .home_counter_number_slot{
+        width: 84px;
+    }
+
+    .home_counter_number{
+        font-size: 28px;
+    }
+
+    .home_counter_text{
+        font-size: 17px;
+    }
+
+    .home_counter_slot_holder{
+        margin: 0 0px;
+    }
+
+    .home_top_order_container{
+        padding: 10px;
+    }
+    .home_top_login_text{
+        font-size: 16px;
+    }
+    .home_top_login_holder{
+        margin-right: 10px;
+        padding: 5px;
+    }
+    .home_hero_sec_heading{
+        font-size: 30px;
+        letter-spacing: 10px;
+        padding-left: 10px;
+    }
+    .home_hero_sec_clg_name{
+        font-size: 16px;
+    }
+    .home_hero_sec_sup_title{
+        font-size: 16px;
+    }
+    .home_hero_sec_date{
+        font-size: 16px;
+    }
+    .home_hero_quote{
+        margin-top: 50px;
+        font-size: 16px;
+    }
+    .about_sec_heading{
+        font-size: 24px;
+    }
+    .about_sec_text{
+        font-size: 16px;
+        width: 90%;
+    }
+
+    .card_sec_holder{
+        margin-top: 50px;
+    }
+
+    .cards_holder{
+        margin-top: 10px;
+    }
+}
+
+@media(max-width:370px){
+    .home_hero_sec_heading{
+        font-size: 24px;
+    }
+    .home_hero_sec_clg_name{
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+    .home_hero_sec_sup_title{
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+    .home_hero_sec_date{
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+    .home_counter_number_slot{
+        width: 70px;
+    }
+
+    .home_counter_number{
+        font-size: 24px;
+    }
+
+    .home_counter_text{
+        font-size: 16px;
+    }
+
+    .about_sec_text{
+        font-size: 14px;
+    }
+}
