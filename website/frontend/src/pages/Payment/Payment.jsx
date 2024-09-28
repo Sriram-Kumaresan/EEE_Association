@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
-import "./Payment.css";
-
-import payment_heading from "../../asset/payment.svg";
-import bank_icon from "../../asset/Vector.svg";
-import gpay from "../../asset/Gpay.svg";
-import qr from "../../asset/Qr.svg";
-import alconesylogo from "../../asset/pay_logo.svg";
-import cloud from "../../asset/cloud.svg";
+import React, { useState, useRef } from 'react';
+import './Payment.css';
+import payment_heading from '../../asset/payment.svg';
+import bank_icon from '../../asset/Vector.svg';
+import gpay from '../../asset/Gpay.svg';
+import qr from '../../asset/Qr.svg';
+import alconesylogo from '../../asset/pay_logo.svg';
+import cloud from '../../asset/cloud.svg';
 import { PhotoUpload } from '../../widgets';
 
 const Payment = () => {
@@ -14,24 +13,55 @@ const Payment = () => {
     accountNumber: '',
     ifcCode: '',
     branchName: '',
-    generalRegistration: '',
-    workshop: '',
-    registrationWithFood: '',
-    totalCost: '',
+    generalRegistration: false,
+    workshop: false,
+    food: false,
+    totalCost: 0,
     paymentMode: ''
   });
-
-  const [errors, setErrors] = useState({});
   
+  const [errors, setErrors] = useState({});
+  const fileInputRef = useRef(null);
+
+  const costMapping = {
+    generalRegistration: 500,
+    workshop: 300,
+    food: 700,
+  };
+
+  // Handle Checkbox Selection
+  const handleCheckboxChange = (e) => {
+    const { name, checked } = e.target;
+    setFormValues((prevState) => ({
+      ...prevState,
+      [name]: checked,
+      totalCost: checked 
+        ? prevState.totalCost + costMapping[name]
+        : prevState.totalCost - costMapping[name]
+    }));
+  };
+
+  // File Upload Handling
+  const handleBrowseClick = (event) => {
+    event.preventDefault();
+    fileInputRef.current.click();
+  };
+
+  const handleFileChange = (event) => {
+    const file = event.target.files[0];
+    console.log('Selected file:', file);
+  };
+
   const paymentInstructions = [
-    "Payment must be completed via the designated payment portal.",
-    "Ensure payment is made in full before the registration deadline.",
-    "Use the symposium reference number when making payments.",
-    "Accepted payment methods include credit card, debit card.",
-    "Payment confirmation will be sent via email within 24 hours.",
-    "No refunds will be issued after the payment is processed."
+    'Payment must be completed via the designated payment portal.',
+    'Ensure payment is made in full before the registration deadline.',
+    'Use the symposium reference number when making payments.',
+    'Accepted payment methods include credit card, debit card, UPI.',
+    'Payment confirmation will be sent via email within 24 hours.',
+    'No refunds will be issued after the payment is processed.'
   ];
 
+  // Handle input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormValues({
@@ -40,12 +70,12 @@ const Payment = () => {
     });
   };
 
+  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     const newErrors = {};
-    // Validate form fields
-    Object.keys(formValues).forEach(key => {
-      if (!formValues[key] && key !== 'paymentMode') {
+    Object.keys(formValues).forEach((key) => {
+      if (!formValues[key] && typeof formValues[key] !== 'boolean') {
         newErrors[key] = 'This field is required';
       }
     });
@@ -56,11 +86,11 @@ const Payment = () => {
       setErrors(newErrors);
     } else {
       setErrors({});
-      // Handle successful form submission
-      console.log('Form submitted successfully');
+      console.log('Form submitted successfully with values:', formValues);
     }
   };
 
+  // Render payment instructions
   const renderInstructions = () => {
     return paymentInstructions.map((instruction, index) => (
       <p key={index} className="Eee__pay-inst-p">{`${index + 1}. ${instruction}`}</p>
@@ -70,11 +100,10 @@ const Payment = () => {
   return (
     <div className="Eee__pay-main">
       <div className="Eee__pay-heading">
-        <img className ='pay_main'src={payment_heading} alt="Payment" />
+        <img className="pay_main" src={payment_heading} alt="Payment" />
       </div>
 
       <div className="Eee__pay_inst-delt">
-
         <div className="Eee__pay-inst">
           <div className="Eee__pay-inst-hd">
             <p>PAYMENT INSTRUCTION</p>
@@ -87,100 +116,63 @@ const Payment = () => {
                 <img src={bank_icon} alt="Bank Icon" />
               </div>
             </div>
-            <form className="Eee__pay-inst-form" onSubmit={handleSubmit}>
-              <input
-                className={`Eee__pay-inst-form-inp ${errors.accountNumber ? 'error' : ''}`}
-                type="text"
-                name="accountNumber"
-                placeholder="Account Number:"
-                value={formValues.accountNumber}
-                onChange={handleChange}
-              />
-              {errors.accountNumber && <p className="error-text">{errors.accountNumber}</p>}
-              <input
-                className={`Eee__pay-inst-form-inp ${errors.ifcCode ? 'error' : ''}`}
-                type="text"
-                name="ifcCode"
-                placeholder="IFC Code:"
-                value={formValues.ifcCode}
-                onChange={handleChange}
-              />
-              {errors.ifcCode && <p className="error-text">{errors.ifcCode}</p>}
-              <input
-                className={`Eee__pay-inst-form-inp ${errors.branchName ? 'error' : ''}`}
-                type="text"
-                name="branchName"
-                placeholder="Branch Name"
-                value={formValues.branchName}
-                onChange={handleChange}
-              />
-              {errors.branchName && <p className="error-text">{errors.branchName}</p>}
-            </form>
+            <div className="Eee__pay-inst-form">
+              <p className="Eee__pay-inst-form-p">Account Number: {formValues.accountNumber}</p>
+              <p className="Eee__pay-inst-form-p">IFC Code: {formValues.ifcCode}</p>
+              <p className="Eee__pay-inst-form-p">Branch Name: {formValues.branchName}</p>
+
+            </div>
           </div>
         </div>
-
 
         <div className="Eee__pay-det">
           <div className="Eee__pay-det-hd">
             <p>PAYMENT DETAILS</p>
           </div>
-          <p className="Eee__pay-det-cont Eee__pay-inst-p">Multiple selection provided</p>
-          <form className="Eee__pay-det-form" onSubmit={handleSubmit}>
-            <input
-              className={`Eee__pay-det-inp-half ${errors.generalRegistration ? 'error' : ''}`}
-              type="text"
-              name="generalRegistration"
-              placeholder="General Registration"
-              value={formValues.generalRegistration}
-              onChange={handleChange}
-            />
-            {errors.generalRegistration && <p className="error-text">{errors.generalRegistration}</p>}
-            <input
-              className={`Eee__pay-det-inp-half ${errors.workshop ? 'error' : ''}`}
-              type="text"
-              name="workshop"
-              placeholder="Workshop"
-              value={formValues.workshop}
-              onChange={handleChange}
-            />
-            {errors.workshop && <p className="error-text">{errors.workshop}</p>}
-            <input
-              className={`Eee__pay-inst-form-inp ${errors.registrationWithFood ? 'error' : ''}`}
-              type="text"
-              name="registrationWithFood"
-              placeholder="General Registration + Food"
-              value={formValues.registrationWithFood}
-              onChange={handleChange}
-            />
-            {errors.registrationWithFood && <p className="error-text">{errors.registrationWithFood}</p>}
-            <input
-              className={`Eee__pay-inst-form-inp ${errors.totalCost ? 'error' : ''}`}
-              type="text"
-              name="totalCost"
-              placeholder="Total cost:"
-              value={formValues.totalCost}
-              onChange={handleChange}
-            />
-            {errors.totalCost && <p className="error-text">{errors.totalCost}</p>}
+          <p className="Eee__pay-det-cont Eee__pay-inst-p">Multiple selection allowed</p>
 
-            <div className={`Eee__pay-radio-container ${errors.paymentMode ? 'error' : ''}`}>
-              <label className='Eee__pay-terms' >
-                <input className='Eee__pay-radio'
-                  type="radio"
-                  name="paymentMode"
-                  value="card"
-                  checked={formValues.paymentMode === 'card'}
-                  onChange={handleChange}
+          <div className="Eee__pay-select-main">
+            <div className="Eee__pay-checkbox-full">
+            <label
+  className={`Eee__pay-checkbox ${formValues.food ? 'checked' : ''}`}
+>
+  <input 
+    type="checkbox"
+    name="food"
+    checked={formValues.food}
+    onChange={handleCheckboxChange}
+  />
+  Food
+</label>
+              <label className={`Eee__pay-checkbox ${formValues.workshop ? 'checked' :''}`}>
+                <input 
+                  type="checkbox"
+                  name="workshop"
+                  checked={formValues.workshop}
+                  onChange={handleCheckboxChange}
                 />
-                  <span className='Eee__pay-radio-p'> Accept term & condition</span>
-                  </label>
-              {errors.paymentMode && <p className="error-text">{errors.paymentMode}</p>}
+                Workshop
+              </label>
             </div>
-          </form>
+
+            <label className={`Eee__pay-checkbox pay__full-checkbox ${formValues.generalRegistration ? 'checked':''}`}>
+              <input 
+                type="checkbox"
+                name="generalRegistration"
+                checked={formValues.generalRegistration}
+                onChange={handleCheckboxChange}
+              />
+                General Registration
+            </label>
+
+            <label className="full-checkbox Eee__pay-checkbox">
+              Total: ₹{formValues.totalCost}
+            </label>
+          </div>
 
           <div className="Eee__pay-icon-holder">
             <div className="Eee__pay-det-gpay">
-              <img className='Eee__gpay-svg'src={gpay} alt="Gpay" />
+              <img className="Eee__gpay-svg" src={gpay} alt="Gpay" />
             </div>
           </div>
 
@@ -189,35 +181,49 @@ const Payment = () => {
               <img src={qr} alt="Gpay QR" />
             </div>
             <div className="Eee__gpay-aside-inp">
-              <input className="pay__gpay-inp" type="text" placeholder="999999" />
-              <input className="pay__gpay-inp" type="text" placeholder="99999" />
+              <p className="Eee__gpay-p">9999999999</p>
+              <p className="Eee__gpay-p">9999999999</p>
             </div>
           </div>
         </div>
       </div>
 
-
       <div className="Eee__pay-alconesy">
         <div className="Eee__pay-aloconesy-svg">
-          <img  src={alconesylogo} alt="Alconesy" />
+          <img src={alconesylogo} alt="Alconesy" />
         </div>
         <div className="Eee__pay-cloud-container">
           <div className="Eee__pay-cloud-svg">
             <PhotoUpload />
             <img className="pay__cloud_img" src={cloud} alt="Upload" />
           </div>
-          <p className="Eee__pay-drag-p">Drag and Drop or <a className="Eee__pay-browse" href="#">browse</a></p>
+
+          <input
+            type="file"
+            ref={fileInputRef}
+            style={{ display: 'none' }}
+            onChange={handleFileChange}
+          />
+
+          <p className="Eee__pay-drag-p">Drag and Drop or 
+            <a className="Eee__pay-browse" href="/" onClick={handleBrowseClick}> browse</a>
+          </p>
           <p className="pay__cloud-p">Upload your payment receipt</p>
-          <p className="pay__cloud-p-small">Support formats: JPEG, PNG</p>
+          <p className="pay__cloud-p-small">Supported formats: JPEG, PNG</p>
         </div>
         <div className="Eee__pay-aloconesy-svg">
-          <img  src={alconesylogo} alt="Alconesy" />
+          <img src={alconesylogo} alt="Alconesy" />
         </div>
       </div>
 
+      <div className="Eee__pay__transistion-holder">
+      <input className="Eee__pay-inst-inp"  type="text" required  placeholder='Transistion ID'  />
+      </div>
 
       <div className="Eee__pay-button">
-        <button className="Eee__pay-sbt-button" type="submit" onClick={handleSubmit}>SUBMIT</button>
+        <button className="Eee__pay-sbt-button" type="submit" onClick={handleSubmit}>
+          SUBMIT
+        </button>
       </div>
     </div>
   );

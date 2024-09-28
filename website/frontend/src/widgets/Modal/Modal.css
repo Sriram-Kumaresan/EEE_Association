@@ -1,0 +1,190 @@
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 980;
+    overflow: auto;
+  }
+  
+  .modal-card {
+    /* background-color: #fff; */
+    background-image: url('../../asset/payment_bg.webp');
+    background-size: cover;
+    border: .5px solid #FEE356;
+    max-width: 600px; /* Set a fixed max width */
+    width: auto; /* Shrinks width according to content */
+    max-height: 80vh; /* Set a maximum height to allow scrolling */
+    border-radius: 10px;
+    padding: 6px 20px 20px 20px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    animation: fade_in 0.3s ease-in-out;
+    overflow-y: scroll; /* Enable vertical scrolling */
+    position: relative; /* Ensure close button is positioned correctly */
+    
+    /* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    
+ 
+    scrollbar-width: none;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .modal-title {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Lexend', sans-serif;
+    letter-spacing: 1px;
+    /* position: fixed; */
+  }
+  .modal__button{
+
+    font-family: 'Lexend', sans-serif;
+    padding:  12px 25px;
+    color: white;
+    background-color: #FFAD3261;
+    border: 1px solid #FEE356;
+    border-radius: 5px;
+
+  }
+  
+  .close-btn {
+    height: 40px;
+    width: 40px;
+    /* border: 2px solid red;
+    background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #990000;
+    font-size: 50px;
+    cursor: pointer;
+    z-index: 999;
+    /* position: absolute; */
+  }
+  
+  .close-btn:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    /* box-shadow: 1px 1px 10px #000; */
+  }
+  
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+  }
+  
+  .modal-image {
+    width: 100%; /* Allow image to adapt to width */
+    max-width: 300px; /* Adjust size of the image as needed */
+    border-radius: 5px;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+
+  .modal-description p {
+    font-family: 'Lexend', sans-serif;
+    color: white;
+
+  }
+  
+  .modal-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: black;
+    text-align: justify;
+    line-height: 1.5rem;
+    margin-top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 860px) {
+    .modal-card {
+      max-width: 90%;
+      width: auto;
+    }
+  }
+  
+  @media (max-width: 630px) {
+    .modal-content {
+      flex-direction: column;
+      align-items: center;
+    }
+    .modal-image {
+      width: 100%;
+      max-height: 300px;
+      margin-bottom: 15px;
+    }
+    .modal-description {
+      width: 100%;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 430px) {
+    .modal-title {
+      font-size: 20px;
+    }
+    .close-btn {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .modal-card {
+      max-width: 90%; /* Reduce max-width */
+      width: 90%; /* Adjust width to fit the screen */
+      height: auto; /* Allow height to adjust according to content */
+      padding: 15px; /* Reduce padding */
+    }
+    /* .modal-image {
+      display: none;
+    } */
+    .close-btn {
+      height: 20px;
+      width: 20px;
+    }
+  }
+  
+  @media (max-width: 440px) {
+    .modal-card {
+      max-width: 80%; /* Reduce max-width further */
+      width: 80%; /* Adjust width to fit the screen */
+      padding: 15px; /* Maintain reduced padding */
+      margin: 0 10%; /* Add margins to create space on left and right */
+    }
+    .close-btn {
+    font-size: 35px;
+
+    /* margin-bottom: px; */
+      height: 20px;
+      width: 20px;
+    }
+ 
+  }
